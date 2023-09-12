@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: static;
+    background-image: url(imagens/background_pacifico.png);
+    background-size: cover;
+}
+
+h1 {
+    color: aquamarine;
+}
