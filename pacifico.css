@@ -16,12 +16,12 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url(imagens/background_pacifico.png);
-
+    background: radial-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19
+    );
+   
 }
+
+
 
 nav .menu {
     width: 100%;
