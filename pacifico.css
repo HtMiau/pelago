@@ -55,6 +55,7 @@ ul li a:hover, ul li a:active{
 }
 
 header{
+    width: 100%;
     height: 600px;
     display: flex;
     color: #fff;
