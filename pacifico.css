@@ -89,8 +89,13 @@ main{
     align-items: center;
 }
 
+.show-on-hover:hover + .esquerda {
+    display: block;
+}
 
-
+.esquerda {
+    display: none;
+}
 .esquerda, .direita{
     display: inline-block;
 }
