@@ -1,14 +1,132 @@
-* {
+@font-face {
+    font-family: 'modernSans';
+    src: url(fontes/ModernSans-Light.otf) format(OpenType);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
     margin: 0;
-    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    font-family: 'modernSans', 'Times New Roman', Times, serif; /*fonte vai ser mudada*/
 }
 
 body {
-    position: static;
-    background-image: url(imagens/background_pacifico.png);
+    width: 90%;
+    height: auto;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(imagens/background_pacifico.png);
+
 }
 
-h1 {
-    color: aquamarine;
+nav .menu {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    
+}
+
+.menu ul{
+    list-style: none;
+    font-size: 24px;
+    margin-right: 50px;
+
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+    display: inline;
+    margin: 15px;
+}
+
+ul li a:hover, ul li a:active{
+    color: rgb(255, 255, 255);
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.5);
+    font-weight: bold;
+}
+
+header{
+    height: 600px;
+    display: flex;
+    color: #fff;
+    font-size: 104px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.line{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  
+
+}
+
+/*TESTE ANIMAÇÃO DO TITULO*/ /*NÃO ESTOU CONSEGUINDO CENTRALIZAR ESSA BOMBA T_T*/
+
+.typing-animation{
+    animation: blinkCursor 500ms steps(30)  infinite normal, typing 4s steps(30) 1s normal both;
+}
+
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 6em;
+    }
+}
+
+main{
+    width: 90%;
+    height: 900px;
+    margin: auto;
+}
+
+.conteudo{
+    position: relative;
+    object-fit: contain;
+    top: 60px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.esquerda, .direita{
+    width: 40%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.esquerda img{
+    width: 100%;
+}
+
+.esquerda p{
+    text-align: left;
+    font-size: 32px;
+    color: #fff; 
+}
+
+.direita p{
+    text-align: right;
+    font-size: 32px;
+    color: #fff;
+}
+
+.direita img{
+    width: 100%;
 }
