@@ -15,130 +15,138 @@
 }
 
 body {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    background: linear-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19) no-repeat fixed;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: linear-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19) no-repeat fixed;
 }
 
 
 nav .menu {
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    padding: 20px;
-    
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  
 
 }
 
 .menu ul {
-    list-style: none;
-    font-size: 24px;
-    margin-right: 50px;
+  list-style: none;
+  font-size: 24px;
+  margin-right: 50px;
 
 }
 
 .menu ul li {
-    margin-bottom: 10px;
-    display: inline;
-    margin: 15px;
-    font-family: 'Bell Mt';
-    font-style: italic;
-    /*se quiser tirar o italico dos links*/
+  margin-bottom: 10px;
+  display: inline;
+  margin: 15px;
+  font-family: 'Bell Mt';
+  font-style: italic;
+  /*se quiser tirar o italico dos links*/
 }
 
 .menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255, 0.5);
-    font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: bold;
 }
 
 ul li a:hover,
 ul li a:active {
-    color: #fff;
+  color: #fff;
 }
 
 header {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    color: #fff;
-    font-size: 80px;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Bell Mt';
-    font-style: italic;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  color: #fff;
+  font-size: 80px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bell Mt';
+  font-style: italic;
 }
 
 
 main {
-    width: 90%;
-    height: 900px;
-    margin: auto;
+  width: 90%;
+  height: 900px;
+  margin: auto;
 }
 
 .conteudo {
-    position: relative;
-    object-fit: contain;
-    top: 60px;
-    margin-top: 50px;
-    margin-bottom: 200px;
-    display: flex;
-    justify-content: space-around;
-    background-color: aqua;
+  position: relative;
+  object-fit: contain;
+  top: 60px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-around;
 
 }
 
 
 
 .esquerda, .direita {
-    width: 600px;
-    object-fit: contain;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  width: 600px;
+  object-fit: contain;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 
 
 .esquerda,
 .direita {
-    display: inline-block;
+  display: inline-block;
 }
 
 .detalhes_info {
-    list-style: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 
 }
 
 .conteudo h3 {
-    color: #fff;
-    font-weight: normal;
-    padding: 25px;
-    font-size: 28px;
+  color: #fff;
+  font-weight: normal;
+  padding: 25px;
+  font-size: 28px;
 
+}
+
+#text{
+  visibility: hidden;
 }
 
 .info {
-    text-align: justify;
-    font-size: 28px;
-    color: #fff;
+  text-align: justify;
+  font-size: 28px;
+  color: #fff;
 }
 
 .detalhes {
-    padding: 30px;
-    color: #fff;
-    list-style: none;
-    font-size: 28px;
+  padding: 30px;
+  color: #fff;
+  list-style: none;
+  font-size: 28px;
 
 }
 
 .img {
-    width: 100%;
+  width: 100%;
 }
+
+#text{
+  visibility: hidden;
+}
+
 /* bolhas */
 #bubbles {
     padding: 100px 0
