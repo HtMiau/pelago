@@ -5,6 +5,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family:'Praktika';
+  src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     border: 0;
@@ -72,7 +79,7 @@ header {
 
 
 main {
-  width: 90%;
+  width: 95%;
   height: 900px;
   margin: auto;
 }
@@ -96,6 +103,7 @@ main {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-family: 'Praktika';
 }
 
 
@@ -106,45 +114,59 @@ main {
 }
 
 .detalhes_info {
+  margin-top: 80px;
   list-style: none;
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
 
 }
 
 .conteudo h3 {
-  color: #fff;
+  color: rgba(255,255,255);
   font-weight: normal;
-  padding: 25px;
+  padding: 30px;
   font-size: 28px;
 
 }
 
-#text{
-  visibility: hidden;
+.style{
+  font-size: 22px;
 }
+
+.title_fixo h3 {
+  color: rgba(255,255,255, 0.5);
+
+}
+
 
 .info {
-  text-align: justify;
-  font-size: 28px;
+  text-align: center;
+  font-size: 20px;
   color: #fff;
 }
 
 .detalhes {
-  padding: 30px;
+  margin: auto;
+  margin-left: 30px;
   color: #fff;
   list-style: none;
-  font-size: 28px;
+  font-size: 25px;
+  text-align: center;
 
 }
 
 .img {
-  width: 100%;
+  margin: auto;
+  width: 50%;
 }
 
 #text1, #text2,#text3, #text4, #text5{
+  margin: auto;
   visibility: hidden;
+  width: 65%;
+ 
 }
 
 /* bolhas */
