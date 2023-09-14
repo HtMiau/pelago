@@ -1,16 +1,17 @@
 @font-face {
-    font-family: 'modernSans';
-    src: url(fontes/ModernSans-Light.otf) format(OpenType);
-    font-weight: normal;
-    font-style: normal;
+  font-family:'BellMt';
+  src: url(Bell\ MT.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 * {
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: 'modernSans', 'Times New Roman', Times, serif;
+    
     /*fonte vai ser mudada*/
+    /*Acabei de mudar -D*/
 }
 
 body {
@@ -26,6 +27,7 @@ nav .menu {
     display: flex;
     justify-content: right;
     padding: 20px;
+    
 
 }
 
@@ -40,6 +42,9 @@ nav .menu {
     margin-bottom: 10px;
     display: inline;
     margin: 15px;
+    font-family: 'Bell Mt';
+    font-style: italic;
+    /*se quiser tirar o italico dos links*/
 }
 
 .menu a {
@@ -61,6 +66,8 @@ header {
     font-size: 80px;
     justify-content: center;
     align-items: center;
+    font-family: 'Bell Mt';
+    font-style: italic;
 }
 
 
