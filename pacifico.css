@@ -85,8 +85,10 @@ main {
     margin-bottom: 200px;
     display: flex;
     justify-content: space-around;
+    background-color: aqua;
 
 }
+
 
 
 .esquerda, .direita {
@@ -96,6 +98,7 @@ main {
     text-align: center;
     align-items: center;
 }
+
 
 
 .esquerda,
