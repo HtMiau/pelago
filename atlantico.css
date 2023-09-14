@@ -15,10 +15,8 @@
 body{
     width: 100%;
     height: auto;
-    background-color:blue;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    overflow-x: hidden;
+    background: radial-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19);
 }
 
 nav #menu{
@@ -56,11 +54,53 @@ h1{
 #peixe1{
     position: relative;
     width: 500px;
-    height: 500px;
-    margin-top: 200px;
+    height: 100px;
+    margin-top: 300px;
+    padding-left: 200px;
     
 }
 
+#peixe2{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 50px;
+    margin-left: 650px;
+    margin-top: 200px;
+    
+}
+#peixe3{
+    position: relative;
+    margin-bottom: 500px;
+    clear: left;
+    width: 600px;
+    height: 50px;
+    margin-left: 500px;
+    
+}
+#peixe4{
+    position: relative;
+    clear: left;
+    width: 600px;
+    height: 50px;
+    
+}
+#peixe5{
+    position: relative;
+    clear: left;
+    width: 600px;
+    height: 500px;
+    margin-top: 300px;
+    margin-left: 650px;
+    
+}
+#peixe6{
+    position: relative;
+    clear: left;
+    width: 600px;
+    height: 600px;
+    
+}
 
 
 

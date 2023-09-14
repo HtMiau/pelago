@@ -17,10 +17,8 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background: radial-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19);
-
+    background: linear-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19) no-repeat fixed;
 }
-
 
 
 nav .menu {
@@ -83,8 +81,8 @@ main {
 
 }
 
-.esquerda,
-.direita {
+
+.esquerda, .direita {
     width: 600px;
     object-fit: contain;
     justify-content: center;
@@ -92,13 +90,6 @@ main {
     align-items: center;
 }
 
-.show-on-hover:hover+.esquerda {
-    display: block;
-}
-
-.esquerda {
-    display: none;
-}
 
 .esquerda,
 .direita {
@@ -110,6 +101,7 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
+
 }
 
 .conteudo h3 {
