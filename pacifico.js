@@ -21,6 +21,7 @@ for (let i = 1; i <= 10; i++) {
     });
 }
 
+// make some waves.
 var ocean = document.getElementById("ocean"),
     waveWidth = 10,
     waveCount = Math.floor(window.innerWidth/waveWidth),
