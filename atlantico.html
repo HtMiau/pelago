@@ -5,23 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pélago</title>
     <link rel="stylesheet" href="atlantico.css">
-    <link src="fontes/Bell-MT/Bell MT.ttf">
+    <link src="fontes/boldern-font/Boldern-L3lVE.ttf">
+    <script src="atlantico.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <nav>
-        <div id="menu">
-            <li> <a href="#">Curiosidades Marinhas</a></li>
-            <li> <a href="#">Cuide do Oceano</a></li>
-        </div>
-    </nav>
-    <header>
-        <h1>Atlântico </h1>
+   
+    <header id= cabeçalho>
+        <a href="#" id="espaço"></a>
+       <ul>
+        <li><a href="#">Curiosidades Marinhas</a></li>
+        <li><a href="#">Cuide do Oceano</a></li>
+       </ul>
+
     </header>
 
+    <div id="text">
+         <h1>Atlântico</h1>
+        <h1>Atlântico</h1>
+         <h1>Atlântico</h1>
+         <h1>Atlântico</h1>
+    </div>
+
+    <script>
+        let text= document.getElementById('text');
+       
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+        
+            text.style.top = 30 + value * -0.2 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            
+            rocks.style.top = value * - 0.2 + 'px';
+           
+        })
+    </script>
+<!--
     <div id="bubbles">
         <div class="bubble x1"></div>
         <div class="bubble x2"></div>
@@ -33,7 +59,7 @@
         <div class="bubble x8"></div>
         <div class="bubble x9"></div>
         <div class="bubble x10"></div>
-    </div>
+    </div>-->
 
     <main>
         <div id="peixes">
