@@ -1,6 +1,6 @@
 @font-face {
     font-family:'BellMt';
-    src: url(Bell\ MT.ttf) format('truetype');
+    src: url(fontes/boldern-font/Boldern-L3lVE.ttf) format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -16,40 +16,138 @@ body{
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background: radial-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19);
+    background: linear-gradient(180deg, #192c3b, #183956, #13395a, #1d4b8f, #081425, #03101d, #000407) no-repeat fixed;
 }
 
-nav #menu{
-    width: 100%;
-    margin: 10px 5px ;
-    display: flex;
-    justify-content: right;
+video{
+  position: fixed;
+  width: 100%;
+  height: 750px;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  
+  
 }
 
-#menu li{
-    margin-bottom: 10px;
-    display: inline;
-    margin: 15px 40px;
-    
+#cabeçalho{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color:#081425 ;
+  opacity: 0.7;
+  border-radius: 0px 15px 0 px 15px;
+  z-index: 1;
+  
 }
 
-#menu a{
-    font-family: 'BellMt';
-    font-style: italic;
-    text-decoration:none;
-    color: #fff;
-    font-size: 30px;
+#cabeçalho #espaço{
+  position: relative;
+  color: #fff;
+  font-weight: 800;
+  font-size: 2em;
+  text-decoration: none;
+}
+#cabeçalho ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cabeçalho li{
+  position: relative;
+  list-style: none;
+  margin-left: 20px;
+}
+
+#cabeçalho ul li a{
+  position: relative;
+   text-decoration: none;
+   padding: 6px 15px;
+   color: #fff;
+   font-family: 'BellMt'
+   
 }
 
 
-h1{
-    font-family: 'BellMt';
-    margin-top: 160px;
-    font-size: 150px;
-    text-align: center;
-    color: #fff;
-    font-style: italic;
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#text{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BellMt';
+}
+
+#text h1{
+  position: absolute;
+  font-size: 16vw;
+  color: #fff;
+  float: left;
+  margin-left: 15px;
+}
+
+#text h1:nth-child(1){
+  color: #fff;
+  text-shadow: -2px 2px 0px #183954,
+  -4px 4px 0px #183954,
+  -6px 6px 0px #183954,
+  -8px 8px 20px rgba(0, 0, 0, 0.5),
+  -18px 18px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+#text h1:nth-child(2){
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 3s ease-in-out infinite;
+}
+
+#text h1:nth-child(3){
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 6s ease-in-out infinite;
+}
+
+#text h1:nth-child(4){
+  color: #2196f3;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0%, 100%
+  {
+    clip-path: polygon(0 39%, 15% 39%, 32% 44%, 46% 48%, 61% 54%, 82% 51%, 100% 43%, 100% 100%, 1% 100%, 0 100%);
+  }
+  50%
+  {
+    clip-path: polygon(0 52%, 10% 63%, 23% 69%, 39% 76%, 61% 61%, 80% 60%, 100% 68%, 100% 100%, 1% 100%, 0 100%);
+  }
+}
+
+
+#water{
+  margin-top: 300px;
+
+}
+
+
 
 #peixe1{
     position: relative;
