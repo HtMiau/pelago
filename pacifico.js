@@ -36,5 +36,8 @@ for(var i = 0; i < waveCount; i++){
 
 ocean.appendChild(docFrag);
 
+
+
+
 AOS.init();
 
