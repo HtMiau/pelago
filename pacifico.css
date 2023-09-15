@@ -22,34 +22,12 @@
 }
 
 body {
-  width: 100%;
-  height: auto;
   background-color: #0d2447;
-  /*background: linear-gradient(180deg, #192c3b, #183956, #13395a, #0d2447, #081425, #03101d, #000407) no-repeat fixed;*/
-  background-size: 200% 200%;
   height: 100%;
   width: 100%;
-  animation: background 6s ease infinite;
-
 }
-
-@keyframes background {
-  0% {
-    background-position: 50% 0%;
-  }
-
-  50% {
-    background-position: 50% 100%;
-  }
-
-  100% {
-    background-position: 50% 0%;
-  }
-}
-
 
 nav .menu {
-  position: absolute;
   width: 100%;
   display: flex;
   justify-content: right;
@@ -69,9 +47,7 @@ nav .menu {
   margin-bottom: 10px;
   display: inline;
   margin: 15px;
-  font-family: 'Bell Mt';
-  font-style: italic;
-  /*se quiser tirar o italico dos links*/
+  font-family: 'Praktika';
 }
 
 .menu a {
@@ -85,26 +61,26 @@ ul li a:active {
   color: #fff;
 }
 
+
+
 header {
   width: 100%;
   height: 600px;
+  font-size: 150px;
+  color: #fff;
+  font-family: 'Praktika';
+  background-image: url(pacifico/céu.png);
+  background-size: cover;
 }
 
-h1{
-  width: 100%;
-  position: absolute;
-  margin-top: 200px;
-  color: #fff;
+ header h1{
   text-align: center;
-  font-size: 180px;
-  font-family: 'Bell Mt';
-  opacity: 0.5;
-  z-index: 3;
+  margin-top: 50px;
 }
 
 
 main {
-  width: 90%;
+  width: 80%;
   height: auto;
   margin: auto;
 }
@@ -194,7 +170,7 @@ main {
     width: 100%;
 }
 
-#text1, #text2,#text3, #text4, #text5, #text6, #text7, #text8, #texte9, #text10{
+#text1, #text2,#text3, #text4, #text5, #text6, #text7, #text8, #text9, #text10{
   margin: auto;
   visibility: hidden;
   width: 65%;
@@ -286,6 +262,55 @@ main {
   from { transform: rotate(360deg);}
 }
 
+.onde {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.ondebox{
+  margin-top: 30px;
+}
+
+/* Animation */
+
+.parallaxonde > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallaxonde > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallaxonde > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallaxonde > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallaxonde > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .onde {
+    height:40px;
+    min-height:40px;
+  }
+}
 
 /* bolhas */
 #bubbles {
