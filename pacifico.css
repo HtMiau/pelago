@@ -1,134 +1,237 @@
 @font-face {
-    font-family: 'modernSans';
-    src: url(fontes/ModernSans-Light.otf) format(OpenType);
-    font-weight: normal;
-    font-style: normal;
+  font-family:'BellMt';
+  src: url(Bell\ MT.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family:'Praktika';
+  src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: 'modernSans', 'Times New Roman', Times, serif;
+    
     /*fonte vai ser mudada*/
+    /*Acabei de mudar -D*/
 }
 
 body {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    background: linear-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19) no-repeat fixed;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #192c3b, #183956, #13395a, #0d2447, #081425, #03101d, #000407) no-repeat fixed;
+  background-size: 200% 200%;
+  height: 100%;
+  width: 100%;
+  animation: background 6s ease infinite;
+
+}
+
+@keyframes background {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 
 nav .menu {
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    padding: 20px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  z-index: 99;
 
 }
 
 .menu ul {
-    list-style: none;
-    font-size: 24px;
-    margin-right: 50px;
+  list-style: none;
+  font-size: 24px;
+  margin-right: 50px;
 
 }
 
 .menu ul li {
-    margin-bottom: 10px;
-    display: inline;
-    margin: 15px;
+  margin-bottom: 10px;
+  display: inline;
+  margin: 15px;
+  font-family: 'Bell Mt';
+  font-style: italic;
+  /*se quiser tirar o italico dos links*/
 }
 
 .menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255, 0.5);
-    font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: bold;
 }
 
 ul li a:hover,
 ul li a:active {
-    color: #fff;
+  color: #fff;
 }
 
 header {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    color: #fff;
-    font-size: 80px;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+h1{
+  width: 100%;
+  position: absolute;
+  margin-top: 200px;
+  color: #fff;
+  text-align: center;
+  font-size: 180px;
+  font-family: 'Bell Mt';
+  opacity: 0.5;
+  z-index: 3;
 }
 
 
 main {
-    width: 90%;
-    height: 900px;
-    margin: auto;
+  width: 95%;
+  height: 900px;
+  margin: auto;
 }
 
 .conteudo {
-    position: relative;
-    object-fit: contain;
-    top: 60px;
-    margin-top: 50px;
-    margin-bottom: 200px;
-    display: flex;
-    justify-content: space-around;
+  position: relative;
+  object-fit: contain;
+  top: 60px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-around;
 
 }
+
 
 
 .esquerda, .direita {
-    width: 600px;
-    object-fit: contain;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  width: 600px;
+  object-fit: contain;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Praktika';
 }
+
 
 
 .esquerda,
 .direita {
-    display: inline-block;
+  display: inline-block;
 }
 
 .detalhes_info {
-    list-style: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  margin-top: 80px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .conteudo h3 {
-    color: #fff;
-    font-weight: normal;
-    padding: 25px;
-    font-size: 28px;
+  color: rgba(255,255,255);
+  font-weight: normal;
+  padding: 30px;
+  font-size: 28px;
 
 }
 
+.style{
+  font-size: 22px;
+}
+
+.title_fixo h3 {
+  color: rgba(255,255,255, 0.5);
+
+}
+
+
 .info {
-    text-align: justify;
-    font-size: 28px;
-    color: #fff;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
 }
 
 .detalhes {
-    padding: 30px;
-    color: #fff;
-    list-style: none;
-    font-size: 28px;
+  margin: auto;
+  margin-left: 30px;
+  color: #fff;
+  list-style: none;
+  font-size: 25px;
+  text-align: center;
 
 }
 
 .img {
-    width: 100%;
+  margin: auto;
+  width: 70%;
 }
+
+#text1, #text2,#text3, #text4, #text5, #text6, #text7, #text8, #texte9, #text10{
+  margin: auto;
+  visibility: hidden;
+  width: 65%;
+ 
+}
+
+#ocean{
+  position:absolute;
+  width:100%;
+  min-height:100%;
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+
+  );
+}
+
+.wave{
+  background: linear-gradient(#133964, #4B6B91, #ACCFF7);
+  display:inline-block;
+  height:60%;
+  width:10px;
+  position:absolute;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
+}
+
+
 /* bolhas */
 #bubbles {
     padding: 100px 0
