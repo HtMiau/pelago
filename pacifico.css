@@ -104,8 +104,8 @@ h1{
 
 
 main {
-  width: 95%;
-  height: 900px;
+  width: 90%;
+  height: auto;
   margin: auto;
 }
 
@@ -187,7 +187,12 @@ main {
   width: 70%;
 }
 
-#text1, #text2,#text3, #text4, #text5{
+.imglarger{
+    margin: auto;
+    width: 100%;
+}
+
+#text1, #text2,#text3, #text4, #text5, #text6, #text7, #text8, #texte9, #text10{
   margin: auto;
   visibility: hidden;
   width: 65%;
@@ -230,9 +235,6 @@ main {
     height:60%;
   }
 }
-
-
- 
 
 
 /* bolhas */
