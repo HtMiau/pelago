@@ -25,7 +25,26 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: linear-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19) no-repeat fixed;
+  background: linear-gradient(180deg, #192c3b, #183956, #13395a, #0d2447, #081425, #03101d, #000407) no-repeat fixed;
+  background-size: 200% 200%;
+  height: 100%;
+  width: 100%;
+  animation: background 6s ease infinite;
+
+}
+
+@keyframes background {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 
@@ -165,7 +184,7 @@ main {
 
 .img {
   margin: auto;
-  width: 50%;
+  width: 70%;
 }
 
 #text1, #text2,#text3, #text4, #text5{
@@ -211,6 +230,10 @@ main {
     height:60%;
   }
 }
+
+
+ 
+
 
 /* bolhas */
 #bubbles {
