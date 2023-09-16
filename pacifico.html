@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="pacifico.css" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link src="fontes/Bell-MT/Bell MT.ttf">
-    <link src="fontes/modern_sans/ModernSans-Light.otf">
+    <link src="fontes/praktika/Praktika-Light.otf">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Pacifico</title>
@@ -21,13 +21,17 @@
         <nav>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Curiosidades Marinhas</a></li>
-                    <li><a href="#">Cuide do Oceano</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="#">Campanhas</a></li>
+                    
                 </ul>
             </div>
         </nav>
         <h1 id="title">PACIFICO</h1> <!--Titulo da pagina-->
 
+
+        <!---Ondinhas na header-->
         <div class="ondebox">
             <svg class="onde" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -49,10 +53,13 @@
     <main>
         <div class="wave_direita1"></div> <!---fundo animado -->
 
-        <div class="conteudo"> <!--Separado em sessoes de conteudo-->
+        <div class="conteudo" data-aos="fade-left" 
+        data-aos-easing="linear"
+        data-aos-duration="2000"> <!--Separado em sessoes de conteudo, dentro do conteudo existe a div direita e esquerda e dentro delas as informações mudam-->
+
+            <!--Para criar um efeito de movimento com as animações do AOS eu utilizei duas animaçoes diferentes. Uma no conteudo todo que vem dos lados e com uma duração mais longa e outra que vem de cima apenas na div onde a imagem esta-->
             <div class="esquerda">
                 <div id="text1">
-                    <!--cada id no java script deve ser exclusivo então adicionou uma sessão de conteudo nova add um numero na sequencia, altere tbm o for no script-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -85,33 +92,25 @@
 
            
 
-            <div class="direita" data-aos="fade-down">
+            <div class="direita" data-aos="fade-down" 
+            data-aos-duration="500"> <!--Animação de cima na div imagem-->
                 <div id="element1">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/peixepalhaco.png">
                 </div>
             </div>
-
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
-            </div>
-
         </div>
 
         <div class="wave_esquerda1"></div>
 
 
-        <div class="conteudo">
-            <div class="esquerda">
+        <div class="conteudo"data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="2000"> <!--animação vindo dos lados no conteudo todo-->
+
+            <div class="esquerda"  data-aos="fade-down" 
+            data-aos-duration="500"> <!--Animação de cima na div imagem-->
+
                 <div id="element2">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/peixe-anjo (2).png">
@@ -151,24 +150,14 @@
 
             </div>
 
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
-            </div>
-
 
         </div>
 
 
-        <div class="conteudo">
+        <div class="conteudo" data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
+
             <div class="esquerda">
                 <div id="text3">
                     <ul class="detalhes_info">
@@ -201,7 +190,8 @@
                 </div>
             </div>
 
-            <div class="direita">
+            <div class="direita" data-aos="fade-down"
+            data-aos-duration="500">
                 <div id="element3">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/tartaruga.png">
@@ -220,7 +210,6 @@
                 <div class="bubble x9"></div>
                 <div class="bubble x10"></div>
             </div>
-
 
         </div>
 
@@ -267,7 +256,6 @@
                 </div>
 
             </div>
-
             <div id="bubbles">
                 <div class="bubble x1"></div>
                 <div class="bubble x2"></div>
@@ -280,7 +268,6 @@
                 <div class="bubble x9"></div>
                 <div class="bubble x10"></div>
             </div>
-
         </div>
 
         <div class="conteudo">
@@ -315,7 +302,6 @@
                         facere
                         soluta optio pariatur suscipit molestias ipsam?</p>
                 </div>
-
                 <div id="bubbles">
                     <div class="bubble x1"></div>
                     <div class="bubble x2"></div>
@@ -328,7 +314,6 @@
                     <div class="bubble x9"></div>
                     <div class="bubble x10"></div>
                 </div>
-    
             </div>
 
             <div class="wave_direita2"></div>
@@ -382,20 +367,20 @@
                 </div>
 
             </div>
+            <div id="bubbles">
+                <div class="bubble x1"></div>
+                <div class="bubble x2"></div>
+                <div class="bubble x3"></div>
+                <div class="bubble x4"></div>
+                <div class="bubble x5"></div>
+                <div class="bubble x6"></div>
+                <div class="bubble x7"></div>
+                <div class="bubble x8"></div>
+                <div class="bubble x9"></div>
+                <div class="bubble x10"></div>
+            </div>
         </div>
 
-        <div id="bubbles">
-            <div class="bubble x1"></div>
-            <div class="bubble x2"></div>
-            <div class="bubble x3"></div>
-            <div class="bubble x4"></div>
-            <div class="bubble x5"></div>
-            <div class="bubble x6"></div>
-            <div class="bubble x7"></div>
-            <div class="bubble x8"></div>
-            <div class="bubble x9"></div>
-            <div class="bubble x10"></div>
-        </div>
 
         <div class="conteudo">
             <div class="esquerda">
