@@ -53,10 +53,13 @@
     <main>
         <div class="wave_direita1"></div> <!---fundo animado -->
 
-        <div class="conteudo"> <!--Separado em sessoes de conteudo-->
+        <div class="conteudo" data-aos="fade-left" 
+        data-aos-easing="linear"
+        data-aos-duration="2000"> <!--Separado em sessoes de conteudo, dentro do conteudo existe a div direita e esquerda e dentro delas as informações mudam-->
+
+            <!--Para criar um efeito de movimento com as animações do AOS eu utilizei duas animaçoes diferentes. Uma no conteudo todo que vem dos lados e com uma duração mais longa e outra que vem de cima apenas na div onde a imagem esta-->
             <div class="esquerda">
                 <div id="text1">
-                    <!--cada id no java script deve ser exclusivo então adicionou uma sessão de conteudo nova add um numero na sequencia, altere tbm o "for" no script-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -89,7 +92,8 @@
 
            
 
-            <div class="direita" data-aos="fade-down">
+            <div class="direita" data-aos="fade-down" 
+            data-aos-duration="500"> <!--Animação de cima na div imagem-->
                 <div id="element1">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/peixepalhaco.png">
@@ -100,8 +104,13 @@
         <div class="wave_esquerda1"></div>
 
 
-        <div class="conteudo">
-            <div class="esquerda">
+        <div class="conteudo"data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="2000"> <!--animação vindo dos lados no conteudo todo-->
+
+            <div class="esquerda"  data-aos="fade-down" 
+            data-aos-duration="500"> <!--Animação de cima na div imagem-->
+
                 <div id="element2">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/peixe-anjo (2).png">
@@ -145,7 +154,10 @@
         </div>
 
 
-        <div class="conteudo">
+        <div class="conteudo" data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
+
             <div class="esquerda">
                 <div id="text3">
                     <ul class="detalhes_info">
@@ -178,7 +190,8 @@
                 </div>
             </div>
 
-            <div class="direita">
+            <div class="direita" data-aos="fade-down"
+            data-aos-duration="500">
                 <div id="element3">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/tartaruga.png">

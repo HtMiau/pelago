@@ -74,6 +74,7 @@ header {
 }
 
 header h1 {
+  margin-left: 50px;
   text-align: center;
   margin-top: 50px;
 }
@@ -280,6 +281,8 @@ main {
   }
 }
 
+/*ondas da header*/
+
 .onde {
   position: relative;
   width: 100%;
@@ -330,7 +333,7 @@ main {
   }
 }
 
-/*Shrinking for mobile*/
+/*responsivo das ondas*/
 @media (max-width: 768px) {
   .onde {
     height: 40px;
@@ -338,7 +341,7 @@ main {
   }
 }
 
-/* bolhas */
+/* bolhas inicio */
 #bubbles {
   padding: 100px 0
 }
@@ -591,7 +594,7 @@ main {
     margin-left: 5vw;
   }
 }
-
+/*fim das ondas*/
 
 
 /* responsividade */
