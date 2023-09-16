@@ -52,13 +52,13 @@ nav .menu {
 
 .menu a {
   text-decoration: none;
-  color: rgb(255, 255, 255, 0.5);
+  color: #0a2768;
   font-weight: bold;
 }
 
 ul li a:hover,
 ul li a:active {
-  color: #fff;
+  color: #3463c8;
 }
 
 
@@ -67,7 +67,7 @@ header {
   width: 100%;
   height: 600px;
   font-size: 150px;
-  color: #fff;
+  color: #0a2768;
   font-family: 'Praktika';
   background-image: url(pacifico/céu.png);
   background-size: cover;
@@ -590,6 +590,10 @@ main {
   }
 }
 
+
+
+/* responsividade */
+
 @media screen and (max-width: 600px){
   nav .menu {
     text-align: center;
@@ -690,7 +694,7 @@ main {
     left: 30%;
 
   } 
-  .wave_esquerda1{ /*esquerda 1 é o 2*/
+  .wave_esquerda1{
     top: 5120px;
     left: 30%;
   }
