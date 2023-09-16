@@ -19,6 +19,12 @@ body{
     background: linear-gradient(180deg, #192c3b, #183956, #13395a, #1d4b8f, #081425, #03101d, #000407) no-repeat fixed;
 }
 
+.access-button {
+  width: 40%;
+  height: 40px;
+  z-index: 1;
+  border-radius: 20px;
+}
 video{
   position: fixed;
   width: 100%;
