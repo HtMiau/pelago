@@ -16,9 +16,6 @@
   margin: 0;
   border: 0;
   padding: 0;
-
-  /*fonte vai ser mudada*/
-  /*Acabei de mudar -D*/
 }
 
 body {
@@ -26,6 +23,8 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/*CSS DO MENU*/
 
 nav .menu {
   width: 100%;
@@ -61,7 +60,9 @@ ul li a:active {
   color: #3463c8;
 }
 
+/* FIM DO CSS DO MENU*/
 
+/*HEADER CSS*/
 
 header {
   width: 100%;
@@ -79,12 +80,78 @@ header h1 {
   margin-top: 50px;
 }
 
+/*COMEÇO DAS ONDAS DA HEADER*/
+
+.onde { 
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.ondebox {
+  margin-top: 30px; /*AQUI É ONDE VC MUDA O MARGIN-TOP DAS ONDAS*/
+}
+
+/* ANIMAÇÃO DAS ONDAS */
+
+.parallaxonde>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallaxonde>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallaxonde>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallaxonde>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallaxonde>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*responsivo das ondas*/
+@media (max-width: 768px) {
+  .onde {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+/*FIM DO CSS DAS ONDAS NA HEADER*/
+
+/*FIM DO QUE ESTA NA HEADER*/
+
 
 main {
   width: 80%;
   height: auto;
   margin: auto;
 }
+
+/*COMEÇO DO CONTEUDO DA MAIN*/
 
 .conteudo {
   position: relative;
@@ -98,7 +165,7 @@ main {
 }
 
 
-
+/*CSS DO QUE ESTA DENTRO DO CONTEUDO*/
 .esquerda,
 .direita {
   width: 600px;
@@ -115,6 +182,8 @@ main {
 .direita {
   display: inline-block;
 }
+
+/*CSS DOS TEXTOS*/
 
 .detalhes_info {
   list-style: none;
@@ -159,6 +228,8 @@ main {
 
 }
 
+/*FIM DO CSS DOS TEXTOS*/
+
 .img {
   margin: auto;
   width: 70%;
@@ -171,6 +242,7 @@ main {
   width: 100%;
 }
 
+/*ID DOS TEXTOS*/
 #text1,
 #text2,
 #text3,
@@ -190,6 +262,9 @@ main {
 
 }
 
+/*FIM DO QUE ESTA NA DIV CONTEUDO*/
+
+/* COMEÇO DAS ONDAS DA HEADER*/
 .wave_direita1 {
   width: 1000px;
   height: 1025px;
@@ -281,67 +356,11 @@ main {
   }
 }
 
-/*ondas da header*/
+/*FIM DAS WAVES DO FUNDO*/
 
-.onde {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-}
 
-.ondebox {
-  margin-top: 30px;
-}
 
-/* Animation */
-
-.parallaxonde>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallaxonde>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallaxonde>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallaxonde>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallaxonde>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-
-/*responsivo das ondas*/
-@media (max-width: 768px) {
-  .onde {
-    height: 40px;
-    min-height: 40px;
-  }
-}
-
-/* bolhas inicio */
+/* COMEÇO DO CSS DAS BOLHAS */
 #bubbles {
   padding: 100px 0
 }
@@ -594,10 +613,12 @@ main {
     margin-left: 5vw;
   }
 }
-/*fim das ondas*/
+/*FIM DO CSS DAS BOLHAS*/
 
 
-/* responsividade */
+/* RESPONSIVIDADE DA PAGINA */
+
+/*RESPONSIVIDADE CELULARES*/
 
 @media screen and (max-width: 600px){
   nav .menu {
@@ -635,6 +656,8 @@ main {
     margin-top: 0;
   }
 }
+
+/*RESPONSIVIDADE TABLET*/
 
 @media screen and (max-width:1024px){
   nav .menu {
