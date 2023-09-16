@@ -116,7 +116,6 @@ main {
 }
 
 .detalhes_info {
-  margin-top: 80px;
   list-style: none;
   display: flex;
   text-align: center;
@@ -183,7 +182,10 @@ main {
 #text10 {
   margin: auto;
   visibility: hidden;
-  width: 65%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(52,99,200, 0.1);
+  margin-top: 80px;
 
 }
 
