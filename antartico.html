@@ -4,69 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pélago</title>
-    <link rel="stylesheet" href="atlantico.css">
+    <link rel="stylesheet" href="antartico.css">
+    <script href="antartico.js"></script>
     <link src="fontes/boldern-font/Boldern-L3lVE.ttf">
-    <script src="atlantico.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
-    <!--Libras-->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <nav>
+        <div id="menu">
+            <li> <a href="#">Curiosidades Marinhas</a></li>
+            <li> <a href="#">Cuide do Oceano</a></li>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-      
-      <!--Título-->
-      <header>
+    </nav>
+    <header>
         
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Curiosidades Marinhas</a></li>
-                    <li><a href="#">Cuide do Oceano</a></li>
-                </ul>
-            </div>
-        </nav>
-        <h1 id="title">Atlântico</h1> <!--Titulo da pagina-->
+            <div id="js-video-container" class="slice">
 
-        <div class="ondebox">
-            <svg class="onde" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="onda" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352Z" />
-                </defs>
-                <g class="parallaxonde">
-                    <use xlink:href="#onda" x="48" y="0" fill="rgba(54, 89, 142,0.6" />
-                    <use xlink:href="#onda" x="48" y="3" fill="rgba(54, 89, 142, 0.4)" />
-                    <use xlink:href="#onda" x="48" y="5" fill="rgba(13,36,71,0.1)" />
-                    <use xlink:href="#onda" x="48" y="7" fill="#0d2447" />
-                </g>
-            </svg>
-        </div>
+                <div class="video-container">
+                <iframe width="900" height="315" src="" frameborder="0" allowfullscreen  ></iframe>
+                  <div id="js-player"></div>
+            
+                  <svg class="svg-overlay" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            
+                    <text class="svg-overlay__text svg-overlay__outline" x="90" y="60">
+                        Antártico
+                     </text>
+                      
+                      <defs>
+            
+                      <clipPath id="mask">
+            
+                        <text class="svg-overlay__text" x="0" y="62.5%">
+                            Antártico
+                          </text>
+            
+                      </clipPath>
+            
+                      <filter id="blurFilter" x="0" y="0" width="100%" height="100%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="3 10" />
+                      </filter>
+            
+                    </defs>
+                      
+                  </svg>
+            
+                </div>
+              
+            </div>
+        
     </header>
 
-    <!---->
-    <script>
-        let text= document.getElementById('text');
-       
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY
-             text.style.top = 30 + value * -0.2 + '%';
-         })
-    </script>
-
-
-  <!--Bolhas-->
     <div id="bubbles">
         <div class="bubble x1"></div>
         <div class="bubble x2"></div>
@@ -80,7 +70,6 @@
         <div class="bubble x10"></div>
     </div>
 
-    <!--Animação dos peixes-->
     <main>
         <div id="peixes">
             <div id="peixe1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
@@ -111,7 +100,7 @@
         </div>
     </main>
 
-    <!--Script da animação-->
+    
     <script>
         AOS.init();
     </script>

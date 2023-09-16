@@ -6,7 +6,7 @@ function some_tudo(elementId) {
     document.getElementById(elementId).style.visibility = "hidden";
 }
 
-for (let k = 1; k <= 10; k++) {
+for (let k = 1; k <= 11; k++) {
     const elementId = `element${k}`;
     const textId = `text${k}`;
     

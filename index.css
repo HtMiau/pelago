@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Oceania';
+    src: url(oceania-font/Oceania-13LL.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+*{
+    padding: 0;
+    margin: 0%;
+    border: 0;
+}
+
+body {
+    background-color: #000; /* Fundo escuro como o universo */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif;
+}
+
+/* menu */ 
+
+header{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    float: center;
+    padding: 30px;
+}
+
+header a:hover{
+    color: #090043;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+/* conteúdo */
+
+h1{
+    font-family: 'Oceania';
+    font-size: 200px;
+}
+
+#caixa1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#caixa2{
+    width: 90%;
+    height: 660px;
+    margin: auto;
+    object-fit: contain;
+    background-image: url(imagenshome/principal.png);
+    background-size: contain;
+    margin-bottom: 235px;
+}
+
+#gambiarra{
+    width: 100%;
+    height: 20px;
+}
+
+#verde{
+  height: 48px;
+  width: 176px;
+  margin-left: 790px;
+  margin-top: 61px;
+}
+
+#verde a{
+   text-decoration: none;
+}
+
+#verde a:hover{
+    color: red;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+#caixa3{
+    display: flex;
+    flex-direction: row;
+}
+
+#rosa{
+    height: 48px;
+    width: 176px;
+    margin-top: 163px;
+    margin-left: 544px;
+}
+  
+#rosa a{
+    text-decoration: none;
+}
+
+#rosa a:hover{
+    color: pink;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+#caixa4{
+    display: flex;
+    flex-direction: row;
+}
+
+#vermelho{
+    height: 48px;
+    width: 176px;
+    margin-top: 104px;
+    margin-left: 200px;
+}
+  
+#vermelho a{
+    text-decoration: none;
+}
+
+#vermelho a:hover{
+    color: red;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+#amarelo{
+    height: 48px;
+    width: 176px;
+    margin-top: 104px;
+    margin-left: 717px;
+}
+  
+#amarelo a{
+    text-decoration: none;
+}
+
+#amarel a:hover{
+    color: #dfbe00;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+#caixa5{
+    display: flex;
+    flex-direction: row;
+}
+
+#roxo{
+    height: 48px;
+    width: 176px;
+    margin-top: 149px;
+    margin-left: 840px;
+}
+
+#roxo a{
+    text-decoration: none;
+}
+
+#roxo a:hover{
+    color: #c534ff;
+    text-decoration: none;
+    transition: 2s all;
+}
+
+/* fim do conteúdo */

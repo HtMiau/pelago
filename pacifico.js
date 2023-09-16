@@ -6,9 +6,9 @@ function some_tudo(elementId) {
     document.getElementById(elementId).style.visibility = "hidden";
 }
 
-for (let i = 1; i <= 10; i++) {
-    const elementId = `element${i}`;
-    const textId = `text${i}`;
+for (let k = 1; k <= 11; k++) {
+    const elementId = `element${k}`;
+    const textId = `text${k}`;
     
     const element = document.getElementById(elementId);
     
@@ -20,24 +20,6 @@ for (let i = 1; i <= 10; i++) {
         some_tudo(textId);
     });
 }
-
-// make some waves.
-var ocean = document.getElementById("ocean"),
-    waveWidth = 10,
-    waveCount = Math.floor(window.innerWidth/waveWidth),
-    docFrag = document.createDocumentFragment();
-
-for(var i = 0; i < waveCount; i++){
-  var wave = document.createElement("div");
-  wave.className += " wave";
-  docFrag.appendChild(wave);
-  wave.style.left = i * waveWidth + "px";
-  wave.style.webkitAnimationDelay = (i/100) + "s";
-}
-
-ocean.appendChild(docFrag);
-
-
 
 
 AOS.init();

@@ -1,10 +1,9 @@
 @font-face {
-  font-family: 'Praktika';
-  src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family:'BellMt';
+    src: url("fontes/boldern-font/Boldern-L3lVE.ttf")format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
-
 
 
 *{
@@ -13,128 +12,99 @@
     margin: 0;
 }
 
-body {
-  background-color: #0d2447;
-  height: 100%;
-  width: 100%;
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background: radial-gradient(#132C42, #152E44, #132C42, #10223F, #0B1C32, #081D31, #020F19);
 }
 
-/*Acessibilidade Libras*/
-.access-button {
-  width: 40%;
-  height: 40px;
-  z-index: 1;
-  border-radius: 20px;
+nav #menu{
+    width: 100%;
+    margin: 10px 5px ;
+    display: flex;
+    justify-content: right;
 }
 
-nav .menu {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  padding: 20px;
-  z-index: 99;
+#menu li{
+    margin-bottom: 10px;
+    display: inline;
+    margin: 15px 40px;
+    
+}
+
+#menu a{
+    font-family: 'BellMt';
+    
+    text-decoration:none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.slice {
+	position: relative;
+    display: block;
+    max-width: 70vw;
+    margin: 0 auto;
+    
+}
+
+.video-container {
+    background-color: #000;
+    width: 120%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    clip-path: url(#mask);
+ 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: -10%;
+	left: -5%;
+	width: 90%;
+    height: 120%;
+}
+
+.svg-overlay {
+    position: absolute;
+    z-index: 50;
+    pointer-events: none;
+    width: 140%;
+	height: 100%;
+    font-size: 220px;
+    text-align: center;
+    font-family: 'BellMt';
+
+	&__text {
+		font-size: 100px;
+		font-weight: bold;
+		text-anchor: middle;
+	}
+	
+    &__outline {
+        fill: transparent;
+        stroke: rgba(255,255,255,1);
+        stroke-width: 1;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation: outline 2.5s linear 1s forwards;
+        filter: url(#blurFilter);
+    }
 
 }
 
-.menu ul {
-  list-style: none;
-  font-size: 24px;
-  margin-right: 50px;
+@keyframes outline {
+
+    to {
+        stroke-dashoffset: 0;
+    }
 
 }
 
-.menu ul li {
-  margin-bottom: 10px;
-  display: inline;
-  margin: 15px;
-  font-family: 'Praktika';
-}
 
-.menu a {
-  text-decoration: none;
-  color: #0a2768;
-  font-weight: bold;
-}
-
-ul li a:hover,
-ul li a:active {
-  color: #3463c8;
-}
-
-
-
-header {
-  width: 100%;
-  height: 600px;
-  font-size: 150px;
-  color: #0a2768;
-  font-family: 'Praktika';
-  background-image: url(pacifico/céu.png);
-  background-size: cover;
-}
-
-header h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.onde {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-}
-
-.ondebox {
-  margin-top: 30px;
-}
-
-/* Animation */
-
-.parallaxonde>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallaxonde>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallaxonde>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallaxonde>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallaxonde>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .onde {
-    height: 40px;
-    min-height: 40px;
-  }
-}
 
 
 #peixe1{
@@ -429,6 +399,3 @@ header h1 {
       margin-left: 5vw;
     }
   }
-
-
-

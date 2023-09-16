@@ -1,195 +1,346 @@
 @font-face {
-  font-family: 'Praktika';
-  src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-*{
+    font-family: 'BellMt';
+    src: url(Bell\ MT.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Praktika';
+    src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
     border: 0;
     padding: 0;
-    margin: 0;
-}
-
-body {
-  background-color: #0d2447;
-  height: 100%;
-  width: 100%;
-}
-
-/*Acessibilidade Libras*/
-.access-button {
-  width: 40%;
-  height: 40px;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-nav .menu {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  padding: 20px;
-  z-index: 99;
-
-}
-
-.menu ul {
-  list-style: none;
-  font-size: 24px;
-  margin-right: 50px;
-
-}
-
-.menu ul li {
-  margin-bottom: 10px;
-  display: inline;
-  margin: 15px;
-  font-family: 'Praktika';
-}
-
-.menu a {
-  text-decoration: none;
-  color: #0a2768;
-  font-weight: bold;
-}
-
-ul li a:hover,
-ul li a:active {
-  color: #3463c8;
-}
-
-
-
-header {
-  width: 100%;
-  height: 600px;
-  font-size: 150px;
-  color: #0a2768;
-  font-family: 'Praktika';
-  background-image: url(pacifico/céu.png);
-  background-size: cover;
-}
-
-header h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.onde {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-}
-
-.ondebox {
-  margin-top: 30px;
-}
-
-/* Animation */
-
-.parallaxonde>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallaxonde>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallaxonde>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallaxonde>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallaxonde>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
+  
   }
-
-  100% {
-    transform: translate3d(85px, 0, 0);
+  
+  body {
+    background-color: #0d2447;
+    height: 100%;
+    width: 100%;
   }
-}
-
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .onde {
-    height: 40px;
-    min-height: 40px;
+  
+  nav .menu {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    z-index: 99;
+  
   }
-}
-
-
-#peixe1{
-    position: relative;
-    width: 500px;
-    height: 100px;
-    margin-top: 300px;
-    padding-left: 200px;
-    
-}
-
-#peixe2{
-    position: relative;
-    float: left;
-    width: 600px;
-    height: 50px;
-    margin-left: 650px;
-    margin-top: 200px;
-    
-}
-#peixe3{
-    position: relative;
-    margin-bottom: 500px;
-    clear: left;
-    width: 600px;
-    height: 50px;
-    margin-left: 500px;
-    
-}
-#peixe4{
-    position: relative;
-    clear: left;
-    width: 600px;
-    height: 50px;
-    
-}
-#peixe5{
-    position: relative;
-    clear: left;
-    width: 600px;
-    height: 500px;
-    margin-top: 300px;
-    margin-left: 650px;
-    
-}
-#peixe6{
-    position: relative;
-    clear: left;
-    width: 600px;
+  
+  .menu ul {
+    list-style: none;
+    font-size: 24px;
+    margin-right: 50px;
+  
+  }
+  
+  .menu ul li {
+    margin-bottom: 10px;
+    display: inline;
+    margin: 15px;
+    font-family: 'Praktika';
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #0a2768;
+    font-weight: bold;
+  }
+  
+  ul li a:hover,
+  ul li a:active {
+    color: #3463c8;
+  }
+  
+  
+  
+  header {
+    width: 100%;
     height: 600px;
-    
-}
-
-/* bolhas */
-#bubbles {
+    font-size: 150px;
+    color: #0a2768;
+    font-family: 'Praktika';
+    background-image: url(pacifico/céu.png);
+    background-size: cover;
+  }
+  
+  header h1 {
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  
+  main {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  
+  .conteudo {
+    position: relative;
+    object-fit: contain;
+    top: 60px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+  }
+  
+  
+  
+  .esquerda,
+  .direita {
+    width: 600px;
+    object-fit: contain;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Praktika';
+  }
+  
+  
+  
+  .esquerda,
+  .direita {
+    display: inline-block;
+  }
+  
+  .detalhes_info {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .conteudo h3 {
+    color: rgba(255, 255, 255);
+    font-weight: normal;
+    padding: 30px;
+    font-size: 28px;
+  
+  }
+  
+  .style {
+    font-size: 22px;
+  }
+  
+  .title_fixo h3 {
+    color: rgba(255, 255, 255, 0.5);
+  
+  }
+  
+  
+  .info {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .detalhes {
+    margin: auto;
+    margin-left: 30px;
+    color: #fff;
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+  
+  }
+  
+  .img {
+    margin: auto;
+    width: 70%;
+  }
+  
+  
+  
+  .imglarger {
+    margin: auto;
+    width: 100%;
+  }
+  
+  #text1,
+  #text2,
+  #text3,
+  #text4,
+  #text5,
+  #text6,
+  #text7,
+  #text8,
+  #text9,
+  #text10 {
+    margin: auto;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(52,99,200, 0.1);
+    margin-top: 80px;
+  
+  }
+  
+  .wave_direita1 {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: 2300px;
+    right: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background-color: #0e274d;
+    animation: wave 15s infinite linear;
+  }
+  
+  
+  .wave_esquerda2 {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: 3300px;
+    left: 80%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background-color: #0e274d;
+    animation: wave 15s infinite linear;
+  }
+  
+  .wave_direita3 {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: 1300px;
+    right: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background-color: #0e274d;
+    animation: wave 15s infinite linear;
+  }
+  
+  .wave_direita4 {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: 4300px;
+    right: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background-color: #0e274d;
+    animation: wave 15s infinite linear;
+  }
+  
+  .wave_esquerda3 {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: 5300px;
+    left: 80%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background-color: #0e274d;
+    ;
+    animation: wave 15s infinite linear;
+  }
+  
+  
+  .wave_esquerda1 {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: 1550px;
+    left: 90%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background-color: #0e274d;
+    animation: wave 15s infinite linear;
+  }
+  
+  @keyframes wave {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    from {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*ondas da header*/
+  
+  .onde {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  
+  .ondebox {
+    margin-top: 30px;
+  }
+  
+  /* Animation */
+  
+  .parallaxonde>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  
+  .parallaxonde>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  
+  .parallaxonde>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  
+  .parallaxonde>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  
+  .parallaxonde>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  
+  /*responsivo das ondas*/
+  @media (max-width: 768px) {
+    .onde {
+      height: 40px;
+      min-height: 40px;
+    }
+  }
+  
+  /* bolhas inicio */
+  #bubbles {
     padding: 100px 0
   }
   
@@ -343,9 +494,11 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
+  
     50% {
       opacity: 1;
     }
+  
     100% {
       top: 0vh;
       opacity: 0;
@@ -356,6 +509,7 @@ header h1 {
     0% {
       margin-left: 0px;
     }
+  
     100% {
       margin-left: 5vw;
     }
@@ -366,9 +520,11 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
+  
     50% {
       opacity: 1;
     }
+  
     100% {
       top: 0vh;
       opacity: 0;
@@ -379,6 +535,7 @@ header h1 {
     0% {
       margin-left: 0px;
     }
+  
     100% {
       margin-left: 5vw;
     }
@@ -389,9 +546,11 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
+  
     50% {
       opacity: 1;
     }
+  
     100% {
       top: 0vh;
       opacity: 0;
@@ -402,6 +561,7 @@ header h1 {
     0% {
       margin-left: 0px;
     }
+  
     100% {
       margin-left: 5vw;
     }
@@ -412,9 +572,11 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
+  
     50% {
       opacity: 1;
     }
+  
     100% {
       top: 0vh;
       opacity: 0;
@@ -425,10 +587,119 @@ header h1 {
     0% {
       margin-left: 0px;
     }
+  
     100% {
       margin-left: 5vw;
     }
   }
-
-
-
+  /*fim das ondas*/
+  
+  
+  /* responsividade */
+  
+  @media screen and (max-width: 600px){
+    nav .menu {
+      text-align: center;
+      justify-content: center;
+  
+    }
+  
+    nav li{
+      font-size: 20px;
+  }
+  
+    header {
+      height: 100px;
+    }
+  
+    h1{
+      font-size: 100px;
+    }
+  
+    main {
+      width: 100%;
+    }
+  
+    .conteudo{
+      width: 100%;
+    }
+  
+    .ondebox{
+      margin-top: 90px;
+    }
+  
+    .detalhes_info li{
+      font-size: 20px;
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width:1024px){
+    nav .menu {
+      text-align: center;
+      justify-content: center;
+    }
+  
+    header {
+      height: 400px;
+      font-size: 80px;
+    }
+  
+    main {
+      width: 90%;
+    }
+  
+    .conteudo {
+      width: 100%;
+      flex-direction: column;
+      top: 0;
+    }
+  
+    .esquerda, .direita {
+      width: 100%;
+    }
+  
+    .detalhes_info {
+      margin-top: 20px;
+    }
+  
+    .img, .imglarger{
+      width: 100%;
+      text-align: center;
+    }
+  
+    .wave_direita1, .wave_direita3, .wave_direita4, .wave_esquerda1, .wave_esquerda2, .wave_esquerda3{
+      width: 1800px;
+    }
+  
+    .wave_direita1{
+      top:3000px;
+      right: 10%;
+    } 
+    .wave_esquerda2{
+      width: 1000px;
+      top:1000px;
+      left: 30%;
+    } 
+  
+    .wave_direita3{
+      top:2300px;
+      right: 0;
+    }
+  
+    .wave_direita4{
+      top:9500px;
+      right: 10%;
+  
+    } 
+    .wave_esquerda3{
+      top:7300px;
+      left: 30%;
+  
+    } 
+    .wave_esquerda1{
+      top: 5120px;
+      left: 30%;
+    }
+  
+  }
