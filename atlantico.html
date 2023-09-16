@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    
+    <!--Libras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -25,42 +25,47 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
       
-      
-   
-    <header id= cabeçalho>
-        <a href="#" id="espaço"></a>
-       <ul>
-        <li><a href="#">Curiosidades Marinhas</a></li>
-        <li><a href="#">Cuide do Oceano</a></li>
-       </ul>
+      <!--Título-->
+      <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Curiosidades Marinhas</a></li>
+                    <li><a href="#">Cuide do Oceano</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 id="title">Atlântico</h1> <!--Titulo da pagina-->
 
+        <div class="ondebox">
+            <svg class="onde" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="onda" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352Z" />
+                </defs>
+                <g class="parallaxonde">
+                    <use xlink:href="#onda" x="48" y="0" fill="rgba(54, 89, 142,0.6" />
+                    <use xlink:href="#onda" x="48" y="3" fill="rgba(54, 89, 142, 0.4)" />
+                    <use xlink:href="#onda" x="48" y="5" fill="rgba(13,36,71,0.1)" />
+                    <use xlink:href="#onda" x="48" y="7" fill="#0d2447" />
+                </g>
+            </svg>
+        </div>
     </header>
 
-    <div id="text">
-         <h1>Atlântico</h1>
-        <h1>Atlântico</h1>
-         <h1>Atlântico</h1>
-         <h1>Atlântico</h1>
-    </div>
-
+    <!---->
     <script>
         let text= document.getElementById('text');
        
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY
-        
-            text.style.top = 30 + value * -0.2 + '%';
-            bird1.style.top = value * -1.5 + 'px';
-            bird1.style.left = value * 2 + 'px';
-            bird2.style.top = value * -1.5 + 'px';
-            bird2.style.left = value * -5 + 'px';
-            
-            rocks.style.top = value * - 0.2 + 'px';
-           
-        })
+             text.style.top = 30 + value * -0.2 + '%';
+         })
     </script>
-<!--
+
+
+  <!--Bolhas-->
     <div id="bubbles">
         <div class="bubble x1"></div>
         <div class="bubble x2"></div>
@@ -72,8 +77,9 @@
         <div class="bubble x8"></div>
         <div class="bubble x9"></div>
         <div class="bubble x10"></div>
-    </div>-->
+    </div>
 
+    <!--Animação dos peixes-->
     <main>
         <div id="peixes">
             <div id="peixe1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
@@ -104,7 +110,7 @@
         </div>
     </main>
 
-    
+    <!--Script da animação-->
     <script>
         AOS.init();
     </script>
