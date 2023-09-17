@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indico</title>
 
     <link rel="stylesheet" href="pacifico.css" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,22 +11,30 @@
     <link src="fontes/praktika/Praktika-Light.otf">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Indico</title>
 </head>
+
 <body>
-    
+
+
+
     <header>
+        
         <nav>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Curiosidades</a></li>
                     <li><a href="#">Campanhas</a></li>
-                    
+
                 </ul>
             </div>
         </nav>
+        <video src="img-indico/video_sky.mp4"muted loop autoplay></video>
+        
         <h1 id="title">INDICO</h1> <!--Titulo da pagina-->
 
+     
 
         <!---Ondinhas na header-->
         <div class="ondebox">
@@ -36,85 +44,98 @@
                     <path id="onda" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352Z" />
                 </defs>
                 <g class="parallaxonde">
-                    <use xlink:href="#onda" x="48" y="0" fill="rgba(54, 89, 142,0.6" />
+                    <use xlink:href="#onda" x="48" y="0" fill="rgba(54, 89, 142,0.6" /> <!--COR DAS ONDAS-->
                     <use xlink:href="#onda" x="48" y="3" fill="rgba(54, 89, 142, 0.4)" />
                     <use xlink:href="#onda" x="48" y="5" fill="rgba(13,36,71,0.1)" />
-                    <use xlink:href="#onda" x="48" y="7" fill="#0d2447" />
+                    <use xlink:href="#onda" x="48" y="7" fill="#0d2447" /><!--ULTIMA COR DAS ONDAS-->
                 </g>
             </svg>
         </div>
+        <!--FIM DAS ONDAS-->
     </header>
 
-    
+
 
     <main>
-        <div class="wave_direita1"></div> <!---fundo animado -->
+        <div class="wave_direita1"></div>
+        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
 
-        <div class="conteudo" data-aos="fade-left" 
-        data-aos-easing="linear"
-        data-aos-duration="2000"> <!--Separado em sessoes de conteudo, dentro do conteudo existe a div direita e esquerda e dentro delas as informações mudam-->
+        <!--COMEÇO DO CONTEUDO-->
 
-            <!--Para criar um efeito de movimento com as animações do AOS eu utilizei duas animaçoes diferentes. Uma no conteudo todo que vem dos lados e com uma duração mais longa e outra que vem de cima apenas na div onde a imagem esta-->
-            <div class="esquerda">
-                <div id="text1">
+        <div class="conteudo">
+            <!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
+
+                <div id="text1"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEQUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
                                 <li>Tamanho </li>
-                                <li>10cm</li>
+                                <li>1,15M</li>
                             </ul>
                         </li>
 
                         <li>
                             <ul class="detalhes">
                                 <li>Alimento</li>
-                                <li>zooplâncton</li>
+                                <li>Herbívora</li>
                             </ul>
                         </li>
 
                         <li>
                             <ul class="detalhes">
                                 <li>Profundidade</li>
-                                <li>20m</li>
+                                <li>Águas costeiras</li>
                             </ul>
                         </li>
                     </ul>
 
                     <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">O peixe-borboleta, conhecido como Chaetodon semilarvatus, encanta com suas cores
-                        vibrantes e movimentos graciosos. Nadando entre corais, ele é uma joia dos oceanos tropicais.
+                    <p class="info">A tartaruga-verde, cientificamente conhecida como Chelonia mydas, é uma espécie de tartaruga marinha encontrada em oceanos tropicais e subtropicais ao redor do mundo. Elas são conhecidas por sua coloração verde-oliva, devido às algas que fazem parte de sua dieta. 
                     </p>
-                </div>
-            </div>
+                </div><!--FIM DO ID TEXT-->
 
-           
+                <!--FIM DO QUE APARECERA NA ESQUERDA-->
 
-            <div class="direita" data-aos="fade-down" 
-            data-aos-duration="500"> <!--Animação de cima na div imagem-->
-                <div id="element1">
-                    <h3>Tortuguita - Verde</h3>
-                    <img class="img" src="img - indico/tartaruga-verde.png">
-                </div>
-            </div>
-        </div>
+            </div><!--FIM DA DIV ESQUERDA-->
+
+            <!--COMEÇO DA DIV DIREITA-->
+            <div class="direita">
+                <!--Animação de cima APENAS NA div imagem-->
+                <!--O QUE APARECERA NA DIREITA-->
+                <div id="element1"><!--COMEÇO DO ID ELEMENT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO, MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
+                    <h3>Tartaruga-Verde (Chelonia mydas)</h3>
+                    <img class="img" src="img-indico/tartaruga-verde.png">
+                </div><!--FIM DO ID ELEMENT-->
+            </div> <!--FIM DO QUE APARECERA NA DIREITA-->
+
+        </div> <!--FIM DA DIV CONTEUDO-->
+
+        <!--FIM DO CONTEUDO-->
 
         <div class="wave_esquerda1"></div>
+        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
 
 
-        <div class="conteudo"data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="2000"> <!--animação vindo dos lados no conteudo todo-->
+        <div class="conteudo">
+            <!--animação vindo dos lados no conteudo todo-->
 
-            <div class="esquerda"  data-aos="fade-down" 
-            data-aos-duration="500"> <!--Animação de cima na div imagem-->
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+
+            <div class="esquerda"> <!--Animação de cima na div imagem-->
 
                 <div id="element2">
-                    <h3>TITULO</h3>
-                    <img class="img" src="imagens/peixe-anjo (2).png">
+                    <h3>Tubarão-baleia (Rhincodon typus)</h3>
+                    <img class="img" src="img-indico/Tubarao-baleia.png">
                 </div>
             </div>
             <div class="direita">
-                <div id="text2">
+                <div id="text2"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -145,18 +166,18 @@
                         soluta optio pariatur suscipit molestias ipsam?</p>
                 </div>
 
-            </div>
-
-
+            </div><!--FIM DO ID TEXT-->
         </div>
 
 
-        <div class="conteudo" data-aos="fade-left"
-        data-aos-easing="linear"
-        data-aos-duration="2000">
+        <div class="conteudo">
+            <!--animação vindo dos lados no conteudo todo-->
 
-            <div class="esquerda">
-                <div id="text3">
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+
+            <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
+                <div id="text3"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -184,17 +205,17 @@
                     <p class="info">O peixe-borboleta, conhecido como Chaetodon semilarvatus, encanta com suas cores
                         vibrantes e movimentos graciosos. Nadando entre corais, ele é uma joia dos oceanos tropicais.
                     </p>
-                </div>
+                </div><!--FIM DO ID TEXT-->
             </div>
 
-            <div class="direita" data-aos="fade-down"
-            data-aos-duration="500">
+            <div class="direita">
                 <div id="element3">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/tartaruga.png">
                 </div>
             </div>
 
+            <!--BOLHAS-->
             <div id="bubbles">
                 <div class="bubble x1"></div>
                 <div class="bubble x2"></div>
@@ -207,13 +228,17 @@
                 <div class="bubble x9"></div>
                 <div class="bubble x10"></div>
             </div>
-
+            <!--BOLHAS-->
         </div>
 
         <div class="wave_esquerda2"></div>
+        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
 
-        <div class="conteudo">
-            <div class="esquerda">
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
+
                 <div id="element4">
                     <h3>TITULO</h3>
                     <img class="img" src="imagens/peixe-papagaio.png">
@@ -221,7 +246,8 @@
             </div>
 
             <div class="direita">
-                <div id="text4">
+                <div id="text4"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -250,7 +276,7 @@
                         asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
                         facere
                         soluta optio pariatur suscipit molestias ipsam?</p>
-                </div>
+                </div><!--FIM DO ID TEXT-->
 
             </div>
             <div id="bubbles">
@@ -267,9 +293,12 @@
             </div>
         </div>
 
-        <div class="conteudo">
-            <div class="esquerda">
-                <div id="text5">
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
+                <div id="text5"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -298,7 +327,9 @@
                         asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
                         facere
                         soluta optio pariatur suscipit molestias ipsam?</p>
-                </div>
+                </div><!--FIM DO ID TEXT-->
+
+
                 <div id="bubbles">
                     <div class="bubble x1"></div>
                     <div class="bubble x2"></div>
@@ -311,9 +342,11 @@
                     <div class="bubble x9"></div>
                     <div class="bubble x10"></div>
                 </div>
+
             </div>
 
             <div class="wave_direita2"></div>
+            <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
 
             <div class="direita">
                 <div id="element5">
@@ -322,9 +355,14 @@
                 </div>
             </div>
         </div>
+
         <div class="wave_direita4"></div>
-        <div class="conteudo">
-            <div class="esquerda">
+        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
+
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                 <div id="element6">
                     <h3>TITULO</h3>
                     <img class="img" src="pacifico/agu.png">
@@ -332,7 +370,8 @@
             </div>
 
             <div class="direita">
-                <div id="text6">
+                <div id="text6"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -363,7 +402,7 @@
                         soluta optio pariatur suscipit molestias ipsam?</p>
                 </div>
 
-            </div>
+            </div><!--FIM DO ID TEXT-->
             <div id="bubbles">
                 <div class="bubble x1"></div>
                 <div class="bubble x2"></div>
@@ -379,9 +418,12 @@
         </div>
 
 
-        <div class="conteudo">
-            <div class="esquerda">
-                <div id="text7">
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
+                <div id="text7"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -413,7 +455,7 @@
                 </div>
 
 
-            </div>
+            </div><!--FIM DO ID TEXT-->
 
             <div class="direita">
                 <div id="element7">
@@ -436,12 +478,15 @@
             </div>
         </div>
 
-       
+
 
         <div class="wave_esquerda3"></div>
+        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
 
-        <div class="conteudo">
-            <div class="esquerda">
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                 <div id="element8">
                     <h3>TITULO</h3>
                     <img class="imglarger"
@@ -449,9 +494,12 @@
                 </div>
             </div>
             <div class="wave_direita3"></div>
+            <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
+
 
             <div class="direita">
-                <div id="text8">
+                <div id="text8"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -482,12 +530,15 @@
                         soluta optio pariatur suscipit molestias ipsam?</p>
                 </div>
 
-            </div>
+            </div><!--FIM DO ID TEXT-->
         </div>
 
-        <div class="conteudo">
-            <div class="esquerda">
-                <div id="text9">
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
+                <div id="text9"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -516,7 +567,7 @@
                         asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
                         facere
                         soluta optio pariatur suscipit molestias ipsam?</p>
-                </div>
+                </div><!--FIM DO ID TEXT-->
             </div>
 
             <div class="direita">
@@ -544,8 +595,10 @@
 
 
 
-        <div class="conteudo">
-            <div class="esquerda">
+        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+
+            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
+            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                 <div id="element10">
                     <h3>TITULO</h3>
                     <img class="img"
@@ -554,7 +607,8 @@
             </div>
 
             <div class="direita">
-                <div id="text10">
+                <div id="text10"><!--INICIO DO ID TEXT-->
+                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                     <ul class="detalhes_info">
                         <li>
                             <ul class="detalhes">
@@ -585,7 +639,7 @@
                         soluta optio pariatur suscipit molestias ipsam?</p>
                 </div>
 
-            </div>
+            </div><!--FIM DO ID TEXT-->
 
             <div id="bubbles">
                 <div class="bubble x1"></div>
@@ -609,4 +663,5 @@
 
 
 </body>
+
 </html>
