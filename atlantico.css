@@ -15,6 +15,7 @@ body {
   background-color: #0d2447;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   
 }
 
@@ -69,6 +70,7 @@ header {
   color: #0a2768;
   font-family: 'Praktika';
   background-size: cover;
+  background-image: url(img/atlantico/cèu.jpg);
 }
 
 
@@ -586,6 +588,119 @@ header h1 {
       margin-left: 5vw;
     }
   }
+
+  /* RESPONSIVIDADE DA PAGINA */
+
+/*RESPONSIVIDADE CELULARES*/
+
+@media screen and (max-width: 600px){
+  nav .menu {
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  nav li{
+    font-size: 20px;
+}
+
+  header {
+    height: 100px;
+  }
+
+  h1{
+    font-size: 100px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .conteudo{
+    width: 100%;
+  }
+
+  .ondebox{
+    margin-top: 90px;
+  }
+
+  .detalhes_info li{
+    font-size: 20px;
+    margin-top: 0;
+  }
+}
+
+/*RESPONSIVIDADE TABLET*/
+
+@media screen and (max-width:1024px){
+  nav .menu {
+    text-align: center;
+    justify-content: center;
+  }
+
+  header {
+    height: 400px;
+    font-size: 80px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .conteudo {
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+  }
+
+  .esquerda, .direita {
+    width: 100%;
+  }
+
+  .detalhes_info {
+    margin-top: 20px;
+  }
+
+  .img, .imglarger{
+    width: 100%;
+    text-align: center;
+  }
+
+  .wave_direita1, .wave_direita3, .wave_direita4, .wave_esquerda1, .wave_esquerda2, .wave_esquerda3{
+    width: 1800px;
+  }
+
+  .wave_direita1{
+    top:3000px;
+    right: 10%;
+  } 
+  .wave_esquerda2{
+    width: 1000px;
+    top:1000px;
+    left: 30%;
+  } 
+
+  .wave_direita3{
+    top:2300px;
+    right: 0;
+  }
+
+  .wave_direita4{
+    top:9500px;
+    right: 10%;
+
+  } 
+  .wave_esquerda3{
+    top:7300px;
+    left: 30%;
+
+  } 
+  .wave_esquerda1{
+    top: 5120px;
+    left: 30%;
+  }
+
+}
 
 
 
