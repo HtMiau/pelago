@@ -1,49 +1,28 @@
-var tag = document.createElement('script');
+function exibe_text(elementId) {
+    document.getElementById(elementId).style.visibility = "visible";
+}
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+function some_tudo(elementId) {
+    document.getElementById(elementId).style.visibility = "hidden";
+}
 
-var player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('js-player', {
-        height: '390',
-        width: '640',
-        videoId: '-JJAXwAaA2w',
-		controls: 0,
-		modestbranding: 1,
-		rel: 0,
-		showinfo: 0,
-        events: {
-            'onReady': onPlayerReady
-        }
+for (let k = 1; k <= 11; k++) {
+    const elementId = `element${k}`;
+    const textId = `text${k}`;
+    
+    const element = document.getElementById(elementId);
+    
+    element.addEventListener("mouseover", () => {
+        exibe_text(textId);
+    });
+    
+    element.addEventListener("mouseout", () => {
+        some_tudo(textId);
     });
 }
 
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
 
-function pauseVideo() {
-    player.pauseVideo();
-}
+AOS.init();
 
-function playVideo() {
-    player.playVideo();
-}
-
-var playing = true;
-
-document.getElementById('js-video-container').addEventListener('click', function (e) {
-
-    if(playing == true) {
-        pauseVideo();
-        playing = false;
-    } else {
-        playVideo();
-        playing = true;
-    }
-  
-});
 
    
