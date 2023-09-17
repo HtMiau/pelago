@@ -134,61 +134,123 @@ header h1 {
     }
 }
 
-
-#peixe1 {
+main {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  
+  /*COMEÇO DO CONTEUDO DA MAIN*/
+  
+  .conteudo {
     position: relative;
-    width: 500px;
-    height: 100px;
-    margin-top: 300px;
-    padding-left: 200px;
-
-}
-
-#peixe2 {
-    position: relative;
-    float: left;
+    object-fit: contain;
+    top: 60px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+  }
+  
+  
+  /*CSS DO QUE ESTA DENTRO DO CONTEUDO*/
+  .esquerda,
+  .direita {
     width: 600px;
-    height: 50px;
-    margin-left: 650px;
-    margin-top: 200px;
-
-}
-
-#peixe3 {
-    position: relative;
-    margin-bottom: 500px;
-    clear: left;
-    width: 600px;
-    height: 50px;
-    margin-left: 500px;
-
-}
-
-#peixe4 {
-    position: relative;
-    clear: left;
-    width: 600px;
-    height: 50px;
-
-}
-
-#peixe5 {
-    position: relative;
-    clear: left;
-    width: 600px;
-    height: 500px;
-    margin-top: 300px;
-    margin-left: 650px;
-
-}
-
-#peixe6 {
-    position: relative;
-    clear: left;
-    width: 600px;
-    height: 600px;
-
-}
+    object-fit: contain;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Praktika';
+  }
+  
+  
+  
+  .esquerda,
+  .direita {
+    display: inline-block;
+  }
+  
+  /*CSS DOS TEXTOS*/
+  
+  .detalhes_info {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .conteudo h3 {
+    color: rgba(255, 255, 255);
+    font-weight: normal;
+    padding: 30px;
+    font-size: 28px;
+  
+  }
+  
+  .style {
+    font-size: 22px;
+  }
+  
+  .title_fixo h3 {
+    color: rgba(255, 255, 255, 0.5);
+  
+  }
+  
+  
+  .info {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .detalhes {
+    margin: auto;
+    margin-left: 30px;
+    color: #fff;
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+  
+  }
+  
+  /*FIM DO CSS DOS TEXTOS*/
+  
+  .img {
+    margin: auto;
+    width: 70%;
+  }
+  
+  
+  
+  .imglarger {
+    margin: auto;
+    width: 100%;
+  }
+  
+  /*ID DOS TEXTOS*/
+  #text1,
+  #text2,
+  #text3,
+  #text4,
+  #text5,
+  #text6,
+  #text7,
+  #text8,
+  #text9,
+  #text10 {
+    margin: auto;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(52,99,200, 0.1);
+    margin-top: 80px;
+  
+  }
+  
 
 /* bolhas */
 #bubbles {
