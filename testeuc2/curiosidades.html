@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Expandable Animated Card Slider</title>
+
+  <!-- Chamando o Carrossel -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+
+<!-- Chamando o CSS -->
+<link rel="stylesheet" href="curiosidades.css">
+
+</head>
+<body>
+
+     <!-- ESTRELAS -->
+     <div id="star-field"></div>
+     <script src="index.js"></script>
+
+    <!-- MENU -->
+
+    <nav id="primary_nav_wrap">
+        <ul>
+
+            <li><a href="#"> OCEANOS </a>
+                    <ul>
+                    <li><a href="#"> ATLÂNTICO </a></li>
+                    <li><a href="#"> ANTÁRTICO </a></li>
+                    <li><a href="#"> ÍNDICO </a></li>
+                    <li><a href="#"> PACÍFICO </a></li>
+                    <li><a href="#"> ÁRTICO </a></li>
+            </li>
+        </ul> 
+
+
+
+
+        <li><a href="#"> CURIOSIDADES </a></li>
+
+        <li><a href="#"> CAMPANHAS </a></li>
+
+
+        </ul>
+    </nav>
+
+
+<!-- FIM DO MENU -->
+
+
+    <main>
+        <div id="var1">
+            <div id="text"><h1> DESCUBRA </h1></div>
+            <div id="text2"> O oceano de outras formas...</div>
+        </div>
+
+    </main>
+
+
+
+<!-- CARROSSEL -->
+
+<section class="game-section">
+  <h2 class="line-title"> FILMES E DOCUMENTÁRIOS </h2>
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(../imagensc/aquaman.jpeg);">
+      <div class="item-desc">
+        <h3> Aquaman </h3>
+        <p>A cidade de Atlantis, que já foi lar de uma das mais avançadas civilizações do mundo, agora é um reino submerso dominado pelo ganancioso Rei Orm. Com um vasto exército a seu dispor, Orm planeja conquistar tanto os demais reinos do oceano, quanto o mundo da superfície. Em seu caminho está Aquaman, meio-humano e meio-atlante, e verdadeiro herdeiro do trono. Com a ajuda da princesa Mera, Aquaman precisa recuperar o lendário Tridente de Atlan e aceitar seu destino como protetor das profundezas.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../imagensc/baleia.jpg);">
+      <div class="item-desc">
+        <h3> O Segredo das Baleias</h3>
+        <p>A série documental de 2021 dedica um episódio para mostrar como é a vida e ambiente de cada espécie de baleia. As Rainhas Orcas, As Canções das Jubartes, O Reino das Belugas e As Gigantes do Oceano para a baleia Jubarte são os capítulos que integram a primeira temporada lançada.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../imagensc/nemo.jpg);">
+      <div class="item-desc">
+        <h3> Procurando Nemo </h3>
+        <p> Em seu primeiro dia de aula, esquecendo os conselhos do pai superprotetor, Nemo é capturado por um mergulhador e acaba no aquário de um dentista. Enquanto Nemo tenta bolar um plano para escapar, seu pai cruza o oceano para resgatá-lo.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../imagensc/pi.webp);">
+      <div class="item-desc">
+        <h3> As Aventuras de Pi </h3>
+        <p>Pi e sua família decidem ir para o Canadá depois de fechar o zoológico da família. A embarcação deles naufraga, e o jovem sobrevive junto com alguns animais, incluindo um temível tigre de Bengala, com o qual desenvolve uma ligação.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../imagensc/mission.webp);">
+      <div class="item-desc">
+        <h3> Mission Blue </h3>
+        <p>Este documentário retrata a campanha da oceanógrafa Sylvia Earle para salvar os oceanos do mundo de várias ameaças, como a pesca abusiva e os resíduos tóxicos.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(../imagensc/titanic.webp);">
+      <div class="item-desc">
+        <h3> Titanic</h3>
+        <p>Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica viagem inaugural do Titanic em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor. </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Chamando JavaScript -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script  src="curiosidades.js"></script>
+
+</body>
+</html>

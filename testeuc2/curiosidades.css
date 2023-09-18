@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0%;
+    border: 0;
+}
+
+body {
+    background-color: #000; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* MENU */
+
+#primary_nav_wrap
+{
+	margin-top:15px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display: flex;
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:18px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:Arial, Helvetica, sans-serif;
+  z-index: 2;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd;
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#b5b5b57f;
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#313131;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px;
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px;
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+/* FIM DO MENU */
+
+/* Estilização Título */
+
+#text{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pelago';
+  z-index: -1;
+}
+
+#text h1{
+  position: absolute;
+  font-size: 12vw;
+  color: #fff;
+  float: left;
+  margin-left: 15px;
+}
+
+#text h1:nth-child(1){
+  color: #fff;
+  text-shadow: -2px 2px 0px #183954,
+  -4px 4px 0px #183954,
+  -6px 6px 0px #183954,
+  -8px 8px 20px rgba(0, 0, 0, 0.5),
+  -18px 18px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+#text h1:nth-child(2){
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 3s ease-in-out infinite;
+}
+
+#text h1:nth-child(3){
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 6s ease-in-out infinite;
+}
+
+#text h1:nth-child(4){
+  color: #2196f3;
+  animation: animate 4s ease-in-out infinite;
+}
+
+
+/* CONTEÚDO */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+h1{
+    font-family: 'Pelago';
+    font-size: 200px;
+    top: 130px;
+}
+  
+#text2{
+    font-size: 36px;
+    margin-top: -400px;
+}
+
+/* CARROSSEL */
+
+.clear {
+  clear: both;
+}
+img {
+  max-width: 100%;
+  border: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #001fe7;
+}
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+
+
+/* ESTILO DA LINHA COLORIDA*/
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #0800e7;
+}
+
+
+/* INTERAÇÃO CARROSSEL */
+.game-section {
+  padding: 150px 50px;
+}
+.game-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .game-section .item.active {
+    width: 400px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+/* ESTRELAS */
+@keyframes upLeft {
+    0% { margin: 0 0 0 0; }
+    100% { margin: -1000px 0 0 -1000px; }
+  }
+  @keyframes upRight {
+    0% { margin: 0 0 0 0; }
+    100% { margin: -1000px 0 0 1000px; }
+  }
+  @keyframes downLeft {
+    0% { margin: 0 0 0 0; }
+    100% { margin: 1000px 0 0 -1000px; }
+  }
+  @keyframes downRight {
+    0% { margin: 0 0 0 0; }
+    100% { margin: 1000px 0 0 1000px; }
+  }
+  
+  * { box-sizing: border-box; }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background: #000;
+    overflow: auto;
+  }
+  
+  .star,
+  .mid-star,
+  .bg-star {
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,1);
+    margin: 0;
+    z-index: -1;
+  }
+  
+  .mid-star {
+    background: #999;
+    width: 2px;
+    height: 2px;
+    
+    &.up-left {
+    animation: upLeft 10000s linear 1s infinite;
+    }
+    &.up-right {
+      animation: upRight 10000s linear 1s infinite;
+    }
+    &.down-left {
+      animation: downLeft 10000s linear 1s infinite;
+    }
+    &.down-right {
+      animation: downRight 10000s linear 1s infinite;
+    }
+  }
+  
+  .bg-star {
+    background: #333;
+    width: 1px;
+    height: 1px;
+  }
+  
+  .star {
+    &.up-left {
+      animation: upLeft 1000s linear 1s 1;
+    }
+    &.up-right {
+      animation: upRight 1000s linear 1s 1;
+    }
+    &.down-left {
+      animation: downLeft 1000s linear 1s 1;
+    }
+    &.down-right {
+      animation: downRight 1000s linear 1s 1;
+    }
+  }
+
+  #star-field{
+    height: 1500px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+  }
+
+/* FIM DAS ESTRELAS */ 
