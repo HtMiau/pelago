@@ -314,11 +314,26 @@ body{
   
   
   @media only screen and (max-width: 767px) {
+    
+    body{
+      flex-direction: column;
+      margin-left: 300px;
+    }
+
+    .audio_text{
+      margin-left: -00px;
+    }
+    
+    .slide_buttons{
+      margin-left: 320px;
+    }
+    
     .previous_btn {
       left: 50px;
     }
     .next_btn {
       right: 50px;
     }
+
   }
 
