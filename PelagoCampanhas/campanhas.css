@@ -111,16 +111,18 @@ body{
 
   .modobaixa_visao{
     padding: 10px;
-    border: 2px solid #fff;
-    background-color: #000;
-    color: #fff;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
     font-size: 20px;
+    position: absolute;
+    left: 600px;
 }
 
 
 .titulo_principal{
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
     color: white;
     font-size: 100px;
     font-family: 'Praktika';
