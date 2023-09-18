@@ -127,6 +127,8 @@ header {
 #title{
   color: #fff;
   font-size: 350px;
+  left: 50%;
+  top:50%;
 
   
 }
@@ -158,7 +160,7 @@ header {
 }
 
 .ondebox {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 /* Animation */
