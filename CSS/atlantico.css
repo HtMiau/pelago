@@ -1,9 +1,11 @@
 @font-face {
-  font-family: 'Praktika';
-  src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
+  font-family: 'vitorian';
+  src: url(../fontes/praktika/Praktika-Light.otf) format('truetype');
   font-weight: normal;
-  font-style: normal;
+ 
 }
+
+
 
 *{
     border: 0;
@@ -15,8 +17,7 @@ body {
   background-color: #0d2447;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  
+  font-family: 'vitorian';
 }
 
 /*Acessibilidade Libras*/
@@ -47,12 +48,12 @@ nav .menu {
   margin-bottom: 10px;
   display: inline;
   margin: 15px;
-  font-family: 'Praktika';
+  font-family:'praktika';
 }
 
 .menu a {
   text-decoration: none;
-  color: #0a2768;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -67,17 +68,27 @@ header {
   width: 100%;
   height: 600px;
   font-size: 150px;
-  color: #0a2768;
-  font-family: 'Praktika';
+  color: #fff;
+  font-family: 'vitorian';
   background-size: cover;
-  background-image: url(img/atlantico/cèu.jpg);
+  
+  
+}
+
+#fundo{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+
 }
 
 
 
-header h1 {
+#title {
   text-align: center;
   margin-top: 50px;
+  font-family:'praktika';
 }
 
 .onde {
@@ -161,7 +172,7 @@ header h1 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-family: 'Praktika';
+  font-family: 'praktika';
 }
 
 

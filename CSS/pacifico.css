@@ -1,15 +1,16 @@
-@font-face {
-  font-family: 'BellMt';
-  src: url(Bell\ MT.ttf) format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
 
 @font-face {
   font-family: 'Praktika';
   src: url(fontes/praktika/Praktika-Light.otf) format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'vitoria';
+  src: url('Victorian.otf') format('truetype');
+  font-weight: normal;
+ 
 }
 
 * {
@@ -22,6 +23,7 @@ body {
   background-color: #0d2447;
   height: 100%;
   width: 100%;
+  
 }
 
 /*CSS DO MENU*/
