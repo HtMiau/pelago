@@ -18,6 +18,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'vitorian';
+  overflow-x: hidden
 }
 
 /*Acessibilidade Libras*/
@@ -299,7 +300,7 @@ main{
 
 .imglarger {
   margin: auto;
-  width: 150%;
+  width: 100%;
 }
 
 /*ID DOS TEXTOS*/
