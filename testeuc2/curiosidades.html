@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Expandable Animated Card Slider</title>
+  <title> Descubra o Oceano </title>
 
   <!-- Chamando o Carrossel -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
@@ -12,8 +12,24 @@
 <!-- Chamando o CSS -->
 <link rel="stylesheet" href="curiosidades.css">
 
+<!-- Icon -->
+<link rel="icon" href="../favicon/favicon.ico">
+
 </head>
+
 <body>
+
+    <!-- Acessibilidade -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
      <!-- ESTRELAS -->
      <div id="star-field"></div>
@@ -26,20 +42,20 @@
 
             <li><a href="#"> OCEANOS </a>
                     <ul>
-                    <li><a href="#"> ATLÂNTICO </a></li>
-                    <li><a href="#"> ANTÁRTICO </a></li>
-                    <li><a href="#"> ÍNDICO </a></li>
-                    <li><a href="#"> PACÍFICO </a></li>
-                    <li><a href="#"> ÁRTICO </a></li>
+                    <li><a href="../atlantico.html"> ATLÂNTICO </a></li>
+                    <li><a href="../antartico.html"> ANTÁRTICO </a></li>
+                    <li><a href="../indico.html"> ÍNDICO </a></li>
+                    <li><a href="../pacifico.html"> PACÍFICO </a></li>
+                    <li><a href="../artico.html"> ÁRTICO </a></li>
             </li>
         </ul> 
 
 
 
 
-        <li><a href="#"> CURIOSIDADES </a></li>
+        <li><a href="curiosidades.html"> CURIOSIDADES </a></li>
 
-        <li><a href="#"> CAMPANHAS </a></li>
+        <li><a href="../campanhas.html"> CAMPANHAS </a></li>
 
 
         </ul>
@@ -51,8 +67,7 @@
 
     <main>
         <div id="var1">
-            <div id="text"><h1> DESCUBRA </h1></div>
-            <div id="text2"> O oceano de outras formas...</div>
+            <div id="text"><h1> Descubra </h1></div>
         </div>
 
     </main>
