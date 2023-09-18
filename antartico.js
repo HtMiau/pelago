@@ -7,15 +7,15 @@ function some_tudo(elementId) {
 }
 
 for (let k = 1; k <= 10; k++) {
-    const elementId = `element${k}`;
-    const textId = `text${k}`;
-    
+    const elementId = element${ k };
+    const textId = text${ k };
+
     const element = document.getElementById(elementId);
-    
+
     element.addEventListener("mouseover", () => {
         exibe_text(textId);
     });
-    
+
     element.addEventListener("mouseout", () => {
         some_tudo(textId);
     });
@@ -24,4 +24,4 @@ for (let k = 1; k <= 10; k++) {
 
 AOS.init();
 
-   
+
