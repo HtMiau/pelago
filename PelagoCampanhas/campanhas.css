@@ -109,6 +109,15 @@ body{
     font-size: 18px;
 }
 
+  .modobaixa_visao{
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+
+
 .titulo_principal{
     text-align: center;
     margin-top: 80px;
