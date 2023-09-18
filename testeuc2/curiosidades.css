@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Descubra';
+    src: url(../fontes/boldern-font/Boldern-L3lVE.ttf) format(truetype);
+    font-weight: normal;
+}
+
 *{
     padding: 0;
     margin: 0%;
@@ -155,14 +161,14 @@ main{
 }
   
 h1{
-    font-family: 'Pelago';
+    font-family: 'Descubra';
     font-size: 200px;
     top: 130px;
 }
   
 #text2{
     font-size: 36px;
-    margin-top: -400px;
+    padding: 5px;
 }
 
 /* CARROSSEL */
@@ -240,7 +246,8 @@ button {
 
 /* INTERAÇÃO CARROSSEL */
 .game-section {
-  padding: 150px 50px;
+  padding: 10px 50px;
+  margin-top: -200px;
 }
 .game-section .owl-stage {
   margin: 15px 0;
