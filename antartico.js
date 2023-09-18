@@ -28,22 +28,30 @@ function pauseVideo() {
     player.pauseVideo();
 }
 
-function playVideo() {
-    player.playVideo();
+function exibe_text(elementId) {
+    document.getElementById(elementId).style.visibility = "visible";
 }
 
-var playing = true;
+function some_tudo(elementId) {
+    document.getElementById(elementId).style.visibility = "hidden";
+}
 
-document.getElementById('js-video-container').addEventListener('click', function (e) {
+for (let k = 1; k <= 10; k++) {
+    const elementId = `element${k}`;
+    const textId = `text${k}`;
+    
+    const element = document.getElementById(elementId);
+    
+    element.addEventListener("mouseover", () => {
+        exibe_text(textId);
+    });
+    
+    element.addEventListener("mouseout", () => {
+        some_tudo(textId);
+    });
+}
 
-    if(playing == true) {
-        pauseVideo();
-        playing = false;
-    } else {
-        playVideo();
-        playing = true;
-    }
-  
-});
+
+AOS.init();
 
    

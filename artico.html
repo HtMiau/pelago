@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pélago</title>
-    <link rel="stylesheet" href="artico.css">
-    <link src="fontes/boldern-font/Boldern-L3lVE.ttf">
-    <script src="artico.js"></script>
+    <link rel="stylesheet" href="CSS/artico.css">
+    <script src="atlantico.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="favicon/favicon.ico">
 </head>
-
 <body>
-
+    
     <!--Libras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+          <div class="vw-plugin-top-wrapper"></div>
         </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+      </script>
+      
+      <!--Título-->
+      <header>
+       <img id="fundo" src="img atlantico/ceu2.jpg">
+       
+        <!-- MENU -->
 
-    <!--Título-->
-    <header>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Curiosidades Marinhas</a></li>
-                    <li><a href="#">Cuide do Oceano</a></li>
-                </ul>
-            </div>
+        <nav id="primary_nav_wrap">
+            <ul>
+
+                <li><a href="#"> OCEANOS </a>
+                        <ul>
+                        <li><a href="atlantico.html" target="_blank"> ATLÂNTICO </a></li>
+                        <li><a href="antartico.html" target="_blank"> ANTÁRTICO </a></li>
+                        <li><a href="indico.html" target="_blank"> ÍNDICO </a></li>
+                        <li><a href="pacifico.html" target="_blank"> PACÍFICO </a></li>
+                        <li><a href="artico.html" target="_blank"> ÁRTICO </a></li>
+                </li>
+            </ul> 
+        
+
+
+
+            <li><a href="#"> CURIOSIDADES </a></li>
+
+            <li><a href="#"> CAMPANHAS </a></li>
+
+  
+            </ul>
         </nav>
+    
+
+    <!-- FIM DO MENU -->
+
+       
         <h1 id="title">Ártico</h1> <!--Titulo da pagina-->
 
         <div class="ondebox">
@@ -57,13 +78,13 @@
 
     <!---->
     <script>
-        let text = document.getElementById('text');
+        let text= document.getElementById('text');
+       
 
-
-        window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function(){
             let value = window.scrollY
-            text.style.top = 30 + value * -0.2 + '%';
-        })
+             text.style.top = 30 + value * -0.2 + '%';
+         })
     </script>
 
     <!--Bolhas-->
@@ -80,599 +101,42 @@
         <div class="bubble x10"></div>
     </div>
 
+    <!--Animação dos peixes-->
     <main>
-
-        <div class="conteudo">
-            <!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-
-                <div id="text1"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li> 2 a 2,5 metros</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Alimento</li>
-                                <li>Otólitos de peixes</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Profundidade</li>
-                                <li>100M</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">As focas barbudas têm cabeça pequena, focinho curto e nadadeiras quadradas. Seu corpo grande tem uma pelagem cinza escura ou marrom que pode ter manchas escuras ou anéis. Essas focas vivem sobre ou sob o gelo. Eles podem até dormir na água, com a cabeça na superfície para que possam respirar
-                    </p>
-                </div><!--FIM DO ID TEXT-->
-
-                <!--FIM DO QUE APARECERA NA ESQUERDA-->
-
-            </div><!--FIM DA DIV ESQUERDA-->
-
-            <!--COMEÇO DA DIV DIREITA-->
-            <div class="direita">
-                <!--Animação de cima APENAS NA div imagem-->
-                <!--O QUE APARECERA NA DIREITA-->
-                <div id="element1"><!--COMEÇO DO ID ELEMENT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO, MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <h3>Foca Barbuda</h3>
-                    <img class="img" src="imagens_artico/focabarbuda-removebg-preview.png">
-                </div><!--FIM DO ID ELEMENT-->
-            </div> <!--FIM DO QUE APARECERA NA DIREITA-->
-
-        </div> <!--FIM DA DIV CONTEUDO-->
-
-        <!--FIM DO CONTEUDO-->
-
-        <div class="wave_esquerda1"></div>
-        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-
-
-        <div class="conteudo">
-            <!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-
-            <div class="esquerda"> <!--Animação de cima na div imagem-->
-
-                <div id="element2">
-                    <h3>Pinguim Imperador</h3>
-                    <img class="img" src="imagens_artico/pinguim_imperal-removebg-preview.png">
-                </div>
-            </div>
-            <div class="direita">
-                <div id="text2"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>1,22 metros</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Alimento</li>
-                                <li>Peixes, crustáceos e cefalópodes</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Profundidade</li>
-                                <li>550M</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Os pinguins são aves que não voam, mas são excelentes nadadores, conhecidos por viverem em grandes colônias no gelo e se alimentarem principalmente de peixes</p>
-                </div>
-
-            </div><!--FIM DO ID TEXT-->
-        </div>
-
-
-        <div class="conteudo">
-            <!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-
-            <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="text3"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>5,5 metros</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Alimento</li>
-                                <li>Boreogadus saida, Sebastes marinus e Pandalus borealis</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Profundidade</li>
-                                <li>872M</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Belugas são cetáceos brancos do Ártico, adaptados ao frio, com vocalizações únicas, uma dieta variada, vivem em grupos e são monitorados para conservação.
-                    </p>
-                </div><!--FIM DO ID TEXT-->
+        <div id="peixes">
+            <div id="peixe1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                <img src="imagens/download__1_-removebg-preview.png" alt="">
             </div>
 
-            <div class="direita">
-                <div id="element3">
-                    <h3>Baleia-Branca</h3>
-                    <img class="img" src="imagens_artico/Beluga-Desktop-Wallpaper-HD-removebg-preview.png">
-                </div>
+            <div id="peixe2" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
+                <img src="imagens/lyretail-anthias-removebg-preview.png" alt="">
             </div>
-
-            <!--BOLHAS-->
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
+       
+            <div id="peixe3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">
+                <img src="imagens/" alt="">
             </div>
-            <!--BOLHAS-->
-        </div>
-
-        <div class="wave_esquerda2"></div>
-        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-
-                <div id="element4">
-                    <h3>Narval</h3>
-                    <img class="img" src="imagens_artico/narval-removebg-preview (1).png">
-                </div>
+        
+            <div id="peixe4" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
+                <img src="imagens/download-removebg-preview.png" alt="">
             </div>
-
-            <div class="direita">
-                <div id="text4"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>5.5 metros</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Alimento</li>
-                                <li>Bacalhaus do Ártico, chocos, camarão e lula</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Profundidade</li>
-                                <li>1.5m</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">O narval é um peixe do Ártico com um longo dente espiralado, alimenta-se de peixes e lulas, tem uma aparência única e enfrenta ameaças devido às mudanças climáticas e à atividade humana.</p>
-                </div><!--FIM DO ID TEXT-->
-
+           
+            <div id="peixe5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">
+                <img src="imagens/1478_Hg1-removebg-preview.png" alt="">
             </div>
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
+          
+
+            <div id="peixe6" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
+                <img src="imagens/Ophidion_barbatum__Stefano_Guerrieri__1-removebg-preview.png" alt="">
             </div>
         </div>
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="text5"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>5 a 7M</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Alimento</li>
-                                <li>Peixes ósseos, outros tubarões, lulas, crustáceos</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Profundidade</li>
-                                <li>1.2m</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">O tubarão-da-Groenlândia é uma das maiores espécies de tubarões, adaptada a águas frias do Ártico e à Groenlândia. Sua lenta taxa de crescimento e longa vida tornam sua conservação essencial, pois enfrenta riscos devido à pesca excessiva em seu habitat gelado.</p>
-                </div><!--FIM DO ID TEXT-->
-
-
-                <div id="bubbles">
-                    <div class="bubble x1"></div>
-                    <div class="bubble x2"></div>
-                    <div class="bubble x3"></div>
-                    <div class="bubble x4"></div>
-                    <div class="bubble x5"></div>
-                    <div class="bubble x6"></div>
-                    <div class="bubble x7"></div>
-                    <div class="bubble x8"></div>
-                    <div class="bubble x9"></div>
-                    <div class="bubble x10"></div>
-                </div>
-
-            </div>
-
-            <div class="wave_direita2"></div>
-            <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-
-            <div class="direita">
-                <div id="element5">
-                    <h3>Tubarão-da-Groenlândia</h3>
-                    <img class="imglarger" src="imagens_artico/Tubarão-removebg-preview.png">
-                </div>
-            </div>
         </div>
-
-        <div class="wave_direita4"></div>
-        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="element6">
-                    <h3>Liparidae</h3>
-                    <img class="img" src="imagens_artico/peixe_caracol-removebg-preview.png">
-                </div>
-            </div>
-
-            <div class="direita">
-                <div id="text6"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>30cm</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Alimento</li>
-                                <li>Algas e Invertebrados</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Profundidade</li>
-                                <li>4000M</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Os Liparidae encontrados no Oceano Ártico e águas profundas globais. Eles habitam o fundo do mar em profundidades que variam de centenas a milhares de metros, com corpos alongados e cabeças grandes</p>
-                </div>
-
-            </div><!--FIM DO ID TEXT-->
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
-            </div>
-        </div>
-
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="text7"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                        asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                        facere
-                        soluta optio pariatur suscipit molestias ipsam?</p>
-                </div>
-
-
-            </div><!--FIM DO ID TEXT-->
-
-            <div class="direita">
-                <div id="element7">
-                    <h3>TITULO</h3>
-                    <img class="img"
-                        src="imagens/kisspng-european-eel-unagi-ray-finned-fishes-vertebrate-loodusreostub-5bee997204c641.2277224715423635060196.png">
-                </div>
-            </div>
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
-            </div>
-        </div>
-
-
-
-        <div class="wave_esquerda3"></div>
-        <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="element8">
-                    <h3>TITULO</h3>
-                    <img class="imglarger"
-                        src="pacifico/kisspng-giant-oceanic-manta-ray-myliobatoidei-5b2decd866b0b3.8242484515297364084206 (1).png">
-                </div>
-            </div>
-            <div class="wave_direita3"></div>
-            <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-
-
-            <div class="direita">
-                <div id="text8"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                        asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                        facere
-                        soluta optio pariatur suscipit molestias ipsam?</p>
-                </div>
-
-            </div><!--FIM DO ID TEXT-->
-        </div>
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="text9"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                        asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                        facere
-                        soluta optio pariatur suscipit molestias ipsam?</p>
-                </div><!--FIM DO ID TEXT-->
-            </div>
-
-            <div class="direita">
-                <div id="element9">
-                    <h3>TITULO</h3>
-                    <img class="imglarger"
-                        src="pacifico/kisspng-common-bottlenose-dolphin-blue-whale-wholphin-tucu-5ae0f1a4151499.5434195315246913640864 (1).png">
-                </div>
-            </div>
-
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
-            </div>
-
-        </div>
-
-
-
-        <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
-
-            <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-            <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-                <div id="element10">
-                    <h3>TITULO</h3>
-                    <img class="img"
-                        src="pacifico/kisspng-great-white-shark-clip-art-shark-png-picture-5a71bdc6a81732.3152119515174035906885.png">
-                </div>
-            </div>
-
-            <div class="direita">
-                <div id="text10"><!--INICIO DO ID TEXT-->
-                    <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                    <ul class="detalhes_info">
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho </li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="detalhes">
-                                <li>Tamanho</li>
-                                <li>1.6m</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h3>SOBRE O ANIMAL</h3>
-                    <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                        asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                        facere
-                        soluta optio pariatur suscipit molestias ipsam?</p>
-                </div>
-
-            </div><!--FIM DO ID TEXT-->
-
-            <div id="bubbles">
-                <div class="bubble x1"></div>
-                <div class="bubble x2"></div>
-                <div class="bubble x3"></div>
-                <div class="bubble x4"></div>
-                <div class="bubble x5"></div>
-                <div class="bubble x6"></div>
-                <div class="bubble x7"></div>
-                <div class="bubble x8"></div>
-                <div class="bubble x9"></div>
-                <div class="bubble x10"></div>
-            </div>
-
-        </div>
-
-
     </main>
 
     <!--Script da animação-->
     <script>
         AOS.init();
     </script>
-    <script src="artico.js"></script>
-
+    <script src="JS/atlantico.js"></script>
 
 </body>
-
 </html>
