@@ -142,7 +142,10 @@ header {
 
 }
 
-
+main{
+  width: 85%;
+  margin: auto;
+}
 
 #title {
   text-align: center;

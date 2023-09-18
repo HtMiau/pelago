@@ -20,6 +20,12 @@ body {
   font-family: 'vitorian';
 }
 
+main{
+  width: 85%;
+  margin: auto;
+}
+
+
 /*Acessibilidade Libras*/
 .access-button {
   width: 40%;
