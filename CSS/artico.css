@@ -5,6 +5,8 @@
   font-style: normal;
 }
 
+
+
 *{
     border: 0;
     padding: 0;
@@ -15,7 +17,7 @@ body {
   background-color: #0d2447;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  font-family: 'vitorian';
   
 }
 
@@ -27,39 +29,91 @@ body {
   border-radius: 20px;
 }
 
-nav .menu {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  padding: 20px;
-  z-index: 99;
+/* MENU */
 
+#primary_nav_wrap
+{
+	margin-top:0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+   
 }
 
-.menu ul {
-  list-style: none;
-  font-size: 24px;
-  margin-right: 50px;
-
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
 }
 
-.menu ul li {
-  margin-bottom: 10px;
-  display: inline;
-  margin: 15px;
-  font-family: 'Praktika';
+#primary_nav_wrap ul a
+{
+	display: flex;
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:20px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:Arial, Helvetica, sans-serif;
+  z-index: 2;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #0a2768;
-  font-weight: bold;
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
 }
 
-ul li a:hover,
-ul li a:active {
-  color: #3463c8;
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd;
 }
+
+#primary_nav_wrap ul li:hover
+{
+	background:#b5b5b57f;
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#313131;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px;
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px;
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+/* FIM DO MENU */
 
 
 
@@ -67,18 +121,31 @@ header {
   width: 100%;
   height: 600px;
   font-size: 150px;
-  color: #ffffff;
-  font-family: 'Praktika';
+  color: #fff;
+  font-family: 'vitorian';
   background-size: cover;
-  background-image: url(img/atlantico/cèu.jpg);
+}
+
+header h1{
+  color: #fff;
+  
+}
+
+#fundo{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+  opacity: 0.7;
+
 }
 
 
 
-header h1 {
+#title {
   text-align: center;
   margin-top: 50px;
-  color: #fff;
+  font-family:'praktika';
 }
 
 .onde {
@@ -162,7 +229,7 @@ header h1 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-family: 'Praktika';
+  font-family: 'praktika';
 }
 
 
@@ -503,11 +570,9 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
-  
     50% {
       opacity: 1;
     }
-  
     100% {
       top: 0vh;
       opacity: 0;
@@ -518,7 +583,6 @@ header h1 {
     0% {
       margin-left: 0px;
     }
-  
     100% {
       margin-left: 5vw;
     }
@@ -529,11 +593,9 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
-  
     50% {
       opacity: 1;
     }
-  
     100% {
       top: 0vh;
       opacity: 0;
@@ -544,7 +606,6 @@ header h1 {
     0% {
       margin-left: 0px;
     }
-  
     100% {
       margin-left: 5vw;
     }
@@ -555,11 +616,9 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
-  
     50% {
       opacity: 1;
     }
-  
     100% {
       top: 0vh;
       opacity: 0;
@@ -570,7 +629,6 @@ header h1 {
     0% {
       margin-left: 0px;
     }
-  
     100% {
       margin-left: 5vw;
     }
@@ -581,11 +639,9 @@ header h1 {
       top: 100vh;
       opacity: 0;
     }
-  
     50% {
       opacity: 1;
     }
-  
     100% {
       top: 0vh;
       opacity: 0;
@@ -596,7 +652,6 @@ header h1 {
     0% {
       margin-left: 0px;
     }
-  
     100% {
       margin-left: 5vw;
     }
@@ -616,6 +671,18 @@ header h1 {
   nav li{
     font-size: 20px;
 }
+
+#primary_nav_wrap ul a{
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+#fundo{
+  width: 100%;
+  height: 100px;
+}
+
+
 
   header {
     height: 100px;
@@ -654,6 +721,11 @@ header h1 {
   header {
     height: 400px;
     font-size: 80px;
+  }
+
+  #fundo{
+    width: 100%;
+    height: 380px;
   }
 
   main {
