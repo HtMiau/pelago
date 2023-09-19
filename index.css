@@ -404,6 +404,13 @@ h2{
   left: 562px;
   border-radius: 15px;
 }
+#atlantico:hover{
+  color: #fff;
+  background-color: orangered;
+  transition: 2s;
+}
+
+
 
 
 /*Responsividade celular*/
