@@ -171,6 +171,21 @@ h1{
     padding: 5px;
 }
 
+/*ACESSIBILIDADE*/
+
+.audio_text{
+  font-size: 26px;
+  position: absolute;
+  top: 60%;
+  left: 4%;
+}
+
+.audio_acess{
+  position: absolute;
+  top: 70%;
+  left: 3%;
+}
+
 /* CARROSSEL */
 
 .clear {
