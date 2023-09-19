@@ -225,6 +225,22 @@ main{
   z-index: 2;
 }
 
+button {
+  z-index: 999;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 25%;
+  margin-bottom: 80px;
+  background-color: #183d53;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 
 /*CSS DO QUE ESTA DENTRO DO CONTEUDO*/
 .esquerda,
