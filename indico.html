@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pélago</title>
+    <title>indico</title>
     <link rel="stylesheet" href="CSS/indico.css">
     <script src="JS/indico.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="favicon/favicon.ico">
 </head>
+
 <body>
-    
+
     <!--Libras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
       
@@ -43,25 +45,22 @@
                         <li><a href="pacifico.html" target="_blank"> PACÍFICO </a></li>
                         <li><a href="artico.html" target="_blank"> ÁRTICO </a></li>
                 </li>
-            </ul> 
-        
+            </ul>
 
 
 
-            <li><a href="#"> CURIOSIDADES </a></li>
 
             <li><a href="campanhas.html"> CAMPANHAS </a></li>
 
-  
             </ul>
         </nav>
-    
-
-    <!-- FIM DO MENU -->
 
 
+        <!-- FIM DO MENU -->
 
-        
+
+
+
         <h1 id="title">Índico</h1> <!--Titulo da pagina-->
 
         <div class="ondebox">
@@ -71,10 +70,10 @@
                     <path id="onda" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352Z" />
                 </defs>
                 <g class="parallaxonde">
-                    <use xlink:href="#onda" x="48" y="0" fill="rgba(54, 89, 142,0.6" />
-                    <use xlink:href="#onda" x="48" y="3" fill="rgba(54, 89, 142, 0.4)" />
+                    <use xlink:href="#onda" x="48" y="0" fill="rgba(39, 86, 114,0.6" />
+                    <use xlink:href="#onda" x="48" y="3" fill="rgba(39, 86, 114, 0.4)" />
                     <use xlink:href="#onda" x="48" y="5" fill="rgba(13,36,71,0.1)" />
-                    <use xlink:href="#onda" x="48" y="7" fill="#0d2447" />
+                    <use xlink:href="#onda" x="48" y="7" fill="#1c4157" />
                 </g>
             </svg>
         </div>
@@ -82,34 +81,34 @@
 
     <!---->
     <script>
-        let text= document.getElementById('text');
-       
+        let text = document.getElementById('text');
 
-        window.addEventListener('scroll', function(){
+
+        window.addEventListener('scroll', function () {
             let value = window.scrollY
-             text.style.top = 30 + value * -0.2 + '%';
-         })
+            text.style.top = 30 + value * -0.2 + '%';
+        })
     </script>
 
 
-  
+
 
     <!--Animação dos peixes-->
     <main>
         <main>
             <div class="wave_direita1"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-    
+
             <!--COMEÇO DO CONTEUDO-->
     
             <div class="conteudo" data-aos="fade-left" (aparece da esquerda)
             data-aos-easing="linear"
             data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
-    
+
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-    
+
                     <div id="text1"><!--INICIO DO ID TEXT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
                         <ul class="detalhes_info">
@@ -119,14 +118,14 @@
                                     <li>2.5 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentaçãoo:</li>
                                     <li>Carnívoro</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade</li>
@@ -134,16 +133,16 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">O Golfinho-de-bico-comprido é um tipo de golfinho que vive em águas costeiras do Oceano Índico e Pacífico. Eles têm um bico longo e fino, se alimentam de peixes e lulas, e vivem tanto em águas rasas próximas à costa quanto em áreas mais profundas, até 100 metros de profundidade. Esses golfinhos desempenham um papel vital na regulação das populações de peixes e na saúde dos ecossistemas costeiros.
                         </p>
                     </div><!--FIM DO ID TEXT-->
-    
+
                     <!--FIM DO QUE APARECERA NA ESQUERDA-->
-    
+
                 </div><!--FIM DA DIV ESQUERDA-->
-    
+
                 <!--COMEÇO DA DIV DIREITA-->
                 <div class="direita">
                     <!--Animação de cima APENAS NA div imagem-->
@@ -154,11 +153,11 @@
                         <img class="img" src="img-indico/roaz-do-indico.png" data-aos="fade-down" >
                     </div><!--FIM DO ID ELEMENT-->
                 </div> <!--FIM DO QUE APARECERA NA DIREITA-->
-    
+
             </div> <!--FIM DA DIV CONTEUDO-->
-    
+
             <!--FIM DO CONTEUDO-->
-    
+
             <div class="wave_esquerda1"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
@@ -167,11 +166,11 @@
             data-aos-easing="linear"
             data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
-    
+
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-    
+
                 <div class="esquerda"> <!--Animação de cima na div imagem-->
-    
+
                     <div id="element2">
                         <h3>Tartaruga-Verde (Chelonia mydas)</h3>
                         <img class="img" src="img-indico/tartaruga-verde.png">
@@ -187,14 +186,14 @@
                                     <li>1.2 a 1.5 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentação:</li>
                                     <li>Herbívoro</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade:</li>
@@ -202,11 +201,11 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">É uma espécie de tartaruga marinha encontrada em oceanos tropicais e subtropicais ao redor do mundo. São conhecidas por sua coloração verde-oliva, devido às algas que fazem parte de sua dieta. Elas têm um papel fundamental na manutenção dos ecossistemas marinhos, pois ajudam a controlar o crescimento excessivo de algas. O peso médio de um adulto pode variar de 68 a 190 quilos.</p>
                     </div>
-    
+
                 </div><!--FIM DO ID TEXT-->
             </div>
     
@@ -215,9 +214,9 @@
             data-aos-easing="linear"
             data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
-    
+
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
-    
+
                 <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                     <div id="text3"><!--INICIO DO ID TEXT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
@@ -228,14 +227,14 @@
                                     <li>1.6 a 2 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimento</li>
                                     <li>Carnívora</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade</li>
@@ -243,20 +242,20 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">É uma espécie de tubarão comuns em recifes de coral e áreas costeiras tropicais dos oceanos Índico e Pacífico. Eles são reconhecidos pelas pontas das suas barbatanas dorsais, que são negras. Se alimentam principalmente de peixes ósseos, raias, lulas e crustáceos. São caçadores ágeis e costumam se deslocar em grupos enquanto buscam por presas, tornando-se importantes predadores nos ecossistemas de recifes de coral.
                         </p>
                     </div><!--FIM DO ID TEXT-->
                 </div>
-    
+
                 <div class="direita">
                     <div id="element3">
                         <h3> Tubarão-de-pontas-negras-do-recife (Carcharhinus melanopterus)</h3>
                         <img class="img" src="img-indico/tubarão-das-pontas-pretas.png">
                     </div>
                 </div>
-    
+
                 <!--BOLHAS-->
                 <div id="bubbles">
                     <div class="bubble x1"></div>
@@ -272,7 +271,7 @@
                 </div>
                 <!--BOLHAS-->
             </div>
-    
+
             <div class="wave_esquerda2"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
@@ -282,13 +281,13 @@
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
-    
+
                     <div id="element4">
                         <h3>Lula gigante (Architeuthis dux)</h3>
                         <img class="img" src="img-indico/lula-gigante.png">
                     </div>
                 </div>
-    
+
                 <div class="direita">
                     <div id="text4"><!--INICIO DO ID TEXT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
@@ -299,14 +298,14 @@
                                     <li>10 a 13 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimento:</li>
                                     <li>Carnívoro</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade:</li>
@@ -314,11 +313,11 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">É uma das maiores espécies de lulas, vivendo nas profundezas dos oceanos ao redor do mundo a mais de 300 metros de profundidade, podendo alcançar até 1.000 metros. São conhecidas por seu tamanho impressionante, com tentáculos que podem exceder 10 metros. Sua dieta inclui peixes, lulas menores e outros animais marinhos, e são especialistas na caça em ambientes de grande pressão e escuridão nas profundezas oceânicas. Raramente são avistadas vivas na natureza.</p>
                     </div><!--FIM DO ID TEXT-->
-    
+
                 </div>
                 <div id="bubbles">
                     <div class="bubble x1"></div>
@@ -349,14 +348,14 @@
                                     <li>30cm</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentação:</li>
                                     <li>invertebrados e  pequenos organismos marinhos</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade:</li>
@@ -364,12 +363,12 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">"Peixe-bolha" ou "blobfish," é uma espécie de peixe que habita as profundezas do oceano. Eles são encontrados em profundidades que variam de 600 a 1.200 metros abaixo da superfície. O peixe-bolha é conhecido por seu aspecto gelatinoso e corpo flácido, adaptado às altas pressões e baixas temperaturas das águas profundas.</p>
                     </div><!--FIM DO ID TEXT-->
-    
-    
+
+
                     <div id="bubbles">
                         <div class="bubble x1"></div>
                         <div class="bubble x2"></div>
@@ -382,12 +381,12 @@
                         <div class="bubble x9"></div>
                         <div class="bubble x10"></div>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="wave_direita2"></div>
                 <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-    
+
                 <div class="direita">
                     <div id="element5">
                         <h3>Peixe-Bolha (Psychrolutes marcidus) </h3>
@@ -395,7 +394,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="wave_direita4"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
@@ -410,7 +409,7 @@
                         <img class="img" src="img-indico/Tubarao-baleia.png">
                     </div>
                 </div>
-    
+
                 <div class="direita">
                     <div id="text6"><!--INICIO DO ID TEXT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
@@ -421,14 +420,14 @@
                                     <li>12 a 18 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentação:</li>
                                     <li>Herbívora</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade:</li>
@@ -436,11 +435,11 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">O tubarão-baleia é o maior peixe do mundo, encontrado em oceanos tropicais e subtropicais. Eles habitam águas costeiras e profundas, atingindo em média 12 metros de comprimento, podendo chegar a mais de 18 metros. Alimentam-se de plâncton, pequenos peixes e organismos filtrando água com suas brânquias. Apesar de seu tamanho impressionante, são pacíficos com os humanos e são uma atração popular para o ecoturismo e observação da vida marinha globalmente.</p>
                     </div>
-    
+
                 </div><!--FIM DO ID TEXT-->
                 <div id="bubbles">
                     <div class="bubble x1"></div>
@@ -473,14 +472,14 @@
                                     <li>1.6m</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentação</li>
                                     <li>Carnívoros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade</li>
@@ -488,14 +487,14 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">O Peixe-dragão-negro é uma espécie de águas profundas, com aparência peculiar, encontrada globalmente. Vive em profundidades de 200 a 2.000 metros, é carnívoro e utiliza bioluminescência para atrair presas e parceiros.</p>
                     </div>
-    
-    
+
+
                 </div><!--FIM DO ID TEXT-->
-    
+
                 <div class="direita">
                     <div id="element7">
                         <h3>Peixe-dragão-negro (Idiacanthus atlanticus)</h3>
@@ -516,9 +515,9 @@
                     <div class="bubble x10"></div>
                 </div>
             </div>
-    
-    
-    
+
+
+
             <div class="wave_esquerda3"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
@@ -537,8 +536,8 @@
                 </div>
                 <div class="wave_direita3"></div>
                 <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
-    
-    
+
+
                 <div class="direita">
                     <div id="text8"><!--INICIO DO ID TEXT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
@@ -549,14 +548,14 @@
                                     <li>5 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentação</li>
                                     <li>Herbívora</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade</li>
@@ -564,11 +563,11 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">A Manta alfredi é uma espécie de raia manta encontrada em oceanos tropicais e subtropicais. Elas frequentemente vivem em águas costeiras e podem ser encontradas em profundidades de até 200 metros. Essas mantas podem atingir tamanhos impressionantes, com envergadura de asas que pode chegar a mais de 5 metros. A Manta alfredi é uma espécie filtradora que se alimenta principalmente de plâncton e pequenos organismos marinhos, que são capturados enquanto nadam com suas bocas abertas.</p>
                     </div>
-    
+
                 </div><!--FIM DO ID TEXT-->
             </div>
     
@@ -588,14 +587,14 @@
                                     <li>30 metros</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimentação</li>
                                     <li>Pequenos animais</li>
                                 </ul>
                             </li>
-    
+
                             <li>
                                 <ul class="detalhes">
                                     <li>profundidade</li>
@@ -603,12 +602,12 @@
                                 </ul>
                             </li>
                         </ul>
-    
+
                         <h3>SOBRE O ANIMAL</h3>
                         <p class="info">A Baleia-azul é o maior animal da Terra, alcançando até 30 metros de comprimento, habitando profundidades oceânicas de até 500 metros. Sua dieta consiste principalmente de krill, e elas filtram esses crustáceos com suas grandes placas de barbas durante a alimentação.</p>
                     </div><!--FIM DO ID TEXT-->
                 </div>
-    
+
                 <div class="direita">
                     <div id="element9">
                         <h3>Baleia-azul (Balaenoptera musculus)</h3>
@@ -645,4 +644,5 @@
     <script src="JS/indico.js"></script>
 
 </body>
+
 </html>

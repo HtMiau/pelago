@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pélago</title>
+    <title>Pacifico</title>
     <link rel="stylesheet" href="CSS/pacifico.css">
     <script src="atlantico.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -26,14 +26,14 @@
       
       <!--Título-->
       <header>
-       <img id="fundo" src="img atlantico/ceu2.jpg">
+       <img id="fundo" src="img-pacifico/ceu.png">
         
         <!-- MENU -->
 
         <nav id="primary_nav_wrap">
             <ul>
 
-                <li><a href="#"> OCEANOS </a>
+                <li><a href="index.html"> OCEANOS </a>
                         <ul>
                         <li><a href="atlantico.html" target="_blank"> ATLÂNTICO </a></li>
                         <li><a href="antartico.html" target="_blank"> ANTÁRTICO </a></li>
@@ -46,9 +46,9 @@
 
 
 
-            <li><a href="#"> CURIOSIDADES </a></li>
+            <li><a href="../pelago/testeuc2/curiosidades.html"> CURIOSIDADES </a></li>
 
-            <li><a href="#"> CAMPANHAS </a></li>
+            <li><a href="campanhas.html"> CAMPANHAS </a></li>
 
   
             </ul>
@@ -71,7 +71,7 @@
                     <use xlink:href="#onda" x="48" y="0" fill="rgba(54, 89, 142,0.6" />
                     <use xlink:href="#onda" x="48" y="3" fill="rgba(54, 89, 142, 0.4)" />
                     <use xlink:href="#onda" x="48" y="5" fill="rgba(13,36,71,0.1)" />
-                    <use xlink:href="#onda" x="48" y="7" fill="#0d2447" />
+                    <use xlink:href="#onda" x="48" y="7" fill="#34578b" />
                 </g>
             </svg>
         </div>
@@ -93,13 +93,15 @@
 
     <!--Animação dos peixes-->
     <main>
-        <main>
+        <div>
             <div class="wave_direita1"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
             <!--COMEÇO DO CONTEUDO-->
     
-            <div class="conteudo">
+            <div class="conteudo" data-aos="fade-left" 
+            data-aos-easing="linear"
+            data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
@@ -111,27 +113,27 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho: </li>
-                                    <li>2,8 a 3 metros</li>
+                                    <li> 1,5m</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimento:</li>
-                                    <li>Algas e Aguapés</li>
+                                    <li>Alga marinha</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Profundidade</li>
-                                    <li>5m</li>
+                                    <li>Profundidade:</li>
+                                    <li>100m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">O peixe-boi, majestoso habitante dos mares, é um símbolo de gentileza e vitalidade nos ecossistemas aquáticos. Sua preservação é fundamental para a saúde e equilíbrio dos oceanos.
+                        <p class="info">A Tartaruga-verde (Chelonia mydas), também conhecida como tartaruga-verde-comum, é uma das espécies mais icônicas e emblemáticas de tartarugas marinhas que habitam os oceanos do mundo. Seu nome deriva da coloração verde clara de sua gordura subcutânea e da pigmentação de sua carapaça.
                         </p>
                     </div><!--FIM DO ID TEXT-->
     
@@ -145,8 +147,8 @@
                     <!--O QUE APARECERA NA DIREITA-->
                     <div id="element1"><!--COMEÇO DO ID ELEMENT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO, MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/peixe-boi.png">
+                        <h3>Tartaruga-verde</h3>
+                        <img class="img" src="img-pacifico/tartaruga.png" data-aos="fade-down">
                     </div><!--FIM DO ID ELEMENT-->
                 </div> <!--FIM DO QUE APARECERA NA DIREITA-->
     
@@ -158,7 +160,9 @@
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
     
-            <div class="conteudo">
+            <div class="conteudo" data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
@@ -166,8 +170,9 @@
                 <div class="esquerda"> <!--Animação de cima na div imagem-->
     
                     <div id="element2">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/goufin.png">
+                        <h3>Baleia Jubarte</h3>
+                        <img class="imglarger" src="img-pacifico/baleia (2).png" 
+                        data-aos="fade-down">
                     </div>
                 </div>
                 <div class="direita">
@@ -177,37 +182,36 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho: </li>
-                                    <li>1,5m a 10 m</li>
+                                    <li>18m</li>
+                                </ul>
+                            </li>
+    
+                            <li>
+                                <ul class="detalhes">
+                                    <li>Alimento:</li>
+                                    <li>Plâncton</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho</li>
-                                    <li>1.6m</li>
-                                </ul>
-                            </li>
-    
-                            <li>
-                                <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>300m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">A Baleia-jubarte (Megaptera novaeangliae) é uma das criaturas mais impressionantes e carismáticas que habitam os oceanos do nosso planeta. Conhecida por seu tamanho imponente e comportamento espetacular, ela é uma das espécies de baleias mais estudadas e admiradas em todo o mundo.</p>
                     </div>
     
                 </div><!--FIM DO ID TEXT-->
             </div>
     
     
-            <div class="conteudo">
+            <div class="conteudo" data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
@@ -218,37 +222,37 @@
                         <ul class="detalhes_info">
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho </li>
-                                    <li>10cm</li>
+                                    <li>Tamanho: </li>
+                                    <li>4,5m</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Alimento</li>
-                                    <li>zooplâncton</li>
+                                    <li>Alimento:</li>
+                                    <li>Peixes e Crustácios</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Profundidade</li>
-                                    <li>20m</li>
+                                    <li>Profundidade:</li>
+                                    <li>1.000 m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">O peixe-borboleta, conhecido como Chaetodon semilarvatus, encanta com suas cores
-                            vibrantes e movimentos graciosos. Nadando entre corais, ele é uma joia dos oceanos tropicais.
+                        <p class="info">
+                            O Peixe-espada (Xiphias gladius) é uma criatura fascinante e impressionante que habita os vastos oceanos do nosso planeta. Seu nome deriva da notável extensão de sua mandíbula inferior, lembrando uma espada afiada. Este peixe oceânico é conhecido por sua aparência distinta e suas habilidades de caça ágeis.
                         </p>
                     </div><!--FIM DO ID TEXT-->
                 </div>
     
                 <div class="direita">
                     <div id="element3">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/araia.png">
+                        <h3>Peixe-espada</h3>
+                        <img class="imglarger" src="img-pacifico/peixe-espada.png" data-aos="fade-down">
                     </div>
                 </div>
     
@@ -271,14 +275,17 @@
             <div class="wave_esquerda2"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
     
                     <div id="element4">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/peixe lão.png">
+                        <h3>Peixe-Lua</h3>
+                        <img class="imglarger" src="img-pacifico/peixe-lua-removebg-preview.png" 
+                        data-aos="fade-down">
                     </div>
                 </div>
     
@@ -289,27 +296,27 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho: </li>
-                                    <li>47cm</li>
+                                    <li>3,1m</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimento:</li>
-                                    <li>camarões e pequenos peixes</li>
+                                    <li>Zooplâncton e Águas-vivas,</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade:</li>
-                                    <li>300m</li>
+                                    <li>600m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">O peixe-leão-comum, com suas vibrantes cores e movimentos graciosos, é uma presença encantadora nos recifes marinhos, mas sua proliferação descontrolada representa uma ameaça à biodiversidade marinha.</p>
+                        <p class="info">O Peixe-lua (Mola mola), frequentemente chamado de peixe-sol devido à sua forma arredondada e achatada, é uma das criaturas mais fascinantes e distintas dos oceanos. Este peixe gigante, com sua aparência peculiar, conquista o olhar de observadores de vida marinha ao redor do mundo.</p>
                     </div><!--FIM DO ID TEXT-->
     
                 </div>
@@ -327,7 +334,10 @@
                 </div>
             </div>
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="2500"
+       ><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
@@ -336,31 +346,28 @@
                         <ul class="detalhes_info">
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho </li>
-                                    <li>47cm</li>
+                                    <li>Tamanho: </li>
+                                    <li> 4,3m</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimento:</li>
+                                    <li>Peixes, Arraias e Crustáceos</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>300m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">O Tubarão-martelo (gênero Sphyrna) é uma das criaturas mais distintas e intrigantes dos oceanos. Seu nome deriva da notável forma de sua cabeça, que se assemelha a um martelo, com olhos posicionados nas extremidades. Essa estrutura única tem uma função vital, conferindo-lhe uma vantagem evolutiva ao aumentar sua capacidade de visão e percepção.</p>
                     </div><!--FIM DO ID TEXT-->
     
     
@@ -384,8 +391,8 @@
     
                 <div class="direita">
                     <div id="element5">
-                        <h3>TITULO</h3>
-                        <img class="imglarger" src="img atlantico/lala-removebg-preview.png">
+                        <h3>Tubarão Martelo</h3>
+                        <img class="imglarger" src="img-pacifico/tubaraomartelo.png" data-aos="fade-down">
                     </div>
                 </div>
             </div>
@@ -393,13 +400,15 @@
             <div class="wave_direita4"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                     <div id="element6">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/tubaba.png">
+                        <h3>Peixe-Papagaio</h3>
+                        <img class="img" src="img-pacifico/peixe-papagaio.png" data-aos="fade-down">
                     </div>
                 </div>
     
@@ -409,31 +418,28 @@
                         <ul class="detalhes_info">
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>Tamanho: </li>
+                                    <li>50cm</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimento:</li>
+                                    <li>Algas e Pequenos organismos marinhos</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>30m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">O Peixe-papagaio é uma das criaturas mais coloridas e icônicas dos recifes de coral tropicais. Pertencente à família Scaridae, esse peixe recebe o nome devido à sua semelhança com o bico de um papagaio. Sua aparência vibrante e comportamento fascinante o tornam um dos habitantes mais distintos dos ecossistemas marinhos.</p>
                     </div>
     
                 </div><!--FIM DO ID TEXT-->
@@ -452,7 +458,9 @@
             </div>
     
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
@@ -461,31 +469,28 @@
                         <ul class="detalhes_info">
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>Tamanho: </li>
+                                    <li>90cm</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Tamanho:</li>
+                                    <li>Crustáceos e Peixes pequenos </li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>200m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">O Polvo, criatura fascinante dos oceanos, pertence à classe dos cefalópodes e é conhecido por sua inteligência excepcional e sua habilidade de adaptação. Com um corpo mole e flexível, dotado de oito braços repletos de ventosas, o polvo é uma maravilha da vida marinha.</p>
                     </div>
     
     
@@ -493,9 +498,10 @@
     
                 <div class="direita">
                     <div id="element7">
-                        <h3>TITULO</h3>
-                        <img class="img"
-                            src="img atlantico/peixe.png">
+                        <h3>Polvo</h3>
+                        <img class="imglarger"
+                            src="img-pacifico/polvo3.png" data-aos="fade-down"
+                            >
                     </div>
                 </div>
                 <div id="bubbles">
@@ -517,14 +523,18 @@
             <div class="wave_esquerda3"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="2500"
+       ><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                     <div id="element8">
-                        <h3>TITULO</h3>
+                        <h3>Baiacu carioca</h3>
                         <img class="imglarger"
-                            src="img atlantico/peixebranco.png">
+                            src="img-pacifico/baiacu 1.png" 
+                            data-aos="fade-down">
                     </div>
                 </div>
                 <div class="wave_direita3"></div>
@@ -538,36 +548,35 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>50cm</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimento:</li>
+                                    <li>Insetos aquáticos</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>30m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">O Baiacu, também conhecido como peixe-balão ou fugu, é uma criatura marinha única e fascinante que pertence à família dos tetraodontídeos. O que o torna notável é a sua capacidade de inflar rapidamente seu corpo em uma esfera quase perfeita quando se sente ameaçado.</p>
                     </div>
     
                 </div><!--FIM DO ID TEXT-->
             </div>
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
@@ -576,39 +585,36 @@
                         <ul class="detalhes_info">
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>Tamanho: </li>
+                                    <li>2m</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimento:</li>
+                                    <li>Plâncton e Camarões </li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>400m</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">A Água-viva é uma criatura marinha fascinante e peculiar que habita os oceanos e mares de todo o mundo. Ela é um membro da classe Cnidaria, que também inclui corais e anêmonas. O nome "água-viva" é adequado, pois a criatura é predominantemente composta de água, geralmente cerca de 95% a 98% de sua massa.</p>
                     </div><!--FIM DO ID TEXT-->
                 </div>
     
                 <div class="direita">
                     <div id="element9">
-                        <h3>TITULO</h3>
+                        <h3>Água-viva</h3>
                         <img class="imglarger"
-                            src="img atlantico/camarãovacalo.png">
+                            src="img-pacifico/agua-viva (2).png" data-aos="fade-down">
                 </div>
     
                 <div id="bubbles">
@@ -623,15 +629,19 @@
                     <div class="bubble x9"></div>
                     <div class="bubble x10"></div>
                 </div>
-    
             </div>
-    
-    
-    
-        
-    
-                </div><!--FIM DO ID TEXT-->
+        </div><!--FIM DO ID TEXT-->
+
+        <button><a href="#title">Voltar a Superfície</a></button>
+    </div>
+       
+               
+                    
+               
     </main>
+
+    
+
 
     <!--Script da animação-->
     <script>
