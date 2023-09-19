@@ -1,6 +1,6 @@
 
 
-
+/*
         function modo_baixavisao(){
             document.querySelector(".titulo_principal").style.fontSize ="200px";
             document.querySelector(".slide_group").style.width = "1400px";
@@ -27,3 +27,4 @@
             document.querySelector(".botao3").style.width = "400px";
             
         }
+*/

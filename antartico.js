@@ -7,8 +7,8 @@ function some_tudo(elementId) {
 }
 
 for (let k = 1; k <= 10; k++) {
-    const elementId = element${ k };
-    const textId = text${ k };
+    const elementId = element${k};
+    const textId = text${k};
 
     const element = document.getElementById(elementId);
 
@@ -25,3 +25,5 @@ for (let k = 1; k <= 10; k++) {
 AOS.init();
 
 
+
+   
