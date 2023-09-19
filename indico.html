@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pélago</title>
     <link rel="stylesheet" href="CSS/indico.css">
-    <script src="atlantico.js"></script>
+    <script src="JS/indico.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="favicon/favicon.ico">
@@ -26,12 +26,14 @@
       
       <!--Título-->
       <header>
-       <img id="fundo" src="img atlantico/ceu2.jpg">
+       <img id="fundo" src="img-indico/background.jpg">
         
            <!-- MENU -->
 
         <nav id="primary_nav_wrap">
             <ul>
+
+                <li><a href="index.html"> HOME </a></li>
 
                 <li><a href="#"> OCEANOS </a>
                         <ul>
@@ -48,7 +50,7 @@
 
             <li><a href="#"> CURIOSIDADES </a></li>
 
-            <li><a href="#"> CAMPANHAS </a></li>
+            <li><a href="campanhas.html"> CAMPANHAS </a></li>
 
   
             </ul>
@@ -100,7 +102,9 @@
     
             <!--COMEÇO DO CONTEUDO-->
     
-            <div class="conteudo">
+            <div class="conteudo" data-aos="fade-left" (aparece da esquerda)
+            data-aos-easing="linear"
+            data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
@@ -112,27 +116,27 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho: </li>
-                                    <li>2,8 a 3 metros</li>
+                                    <li>2.5 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Alimento:</li>
-                                    <li>Algas e Aguapés</li>
+                                    <li>Alimentaçãoo:</li>
+                                    <li>Carnívoro</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade</li>
-                                    <li>5m</li>
+                                    <li>20 a 100 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">O peixe-boi, majestoso habitante dos mares, é um símbolo de gentileza e vitalidade nos ecossistemas aquáticos. Sua preservação é fundamental para a saúde e equilíbrio dos oceanos.
+                        <p class="info">O Golfinho-de-bico-comprido é um tipo de golfinho que vive em águas costeiras do Oceano Índico e Pacífico. Eles têm um bico longo e fino, se alimentam de peixes e lulas, e vivem tanto em águas rasas próximas à costa quanto em áreas mais profundas, até 100 metros de profundidade. Esses golfinhos desempenham um papel vital na regulação das populações de peixes e na saúde dos ecossistemas costeiros.
                         </p>
                     </div><!--FIM DO ID TEXT-->
     
@@ -146,8 +150,8 @@
                     <!--O QUE APARECERA NA DIREITA-->
                     <div id="element1"><!--COMEÇO DO ID ELEMENT-->
                         <!--SEMPRE QUE ADD MAIS UMA DIV CONTEUDO, MUDAR O NUMERO DESTE ID SEGUINDO A SEGUENCIA-->
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/peixe-boi.png">
+                        <h3>Roaz-do-Indico (Tursiops aduncus)</h3>
+                        <img class="img" src="img-indico/roaz-do-indico.png" data-aos="fade-down" >
                     </div><!--FIM DO ID ELEMENT-->
                 </div> <!--FIM DO QUE APARECERA NA DIREITA-->
     
@@ -159,7 +163,9 @@
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
     
-            <div class="conteudo">
+            <div class="conteudo" data-aos="fade-right"  (aparece da direita)
+            data-aos-easing="linear"
+            data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
@@ -167,8 +173,8 @@
                 <div class="esquerda"> <!--Animação de cima na div imagem-->
     
                     <div id="element2">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/goufin.png">
+                        <h3>Tartaruga-Verde (Chelonia mydas)</h3>
+                        <img class="img" src="img-indico/tartaruga-verde.png">
                     </div>
                 </div>
                 <div class="direita">
@@ -178,37 +184,36 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho: </li>
-                                    <li>1,5m a 10 m</li>
+                                    <li>1.2 a 1.5 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimentação:</li>
+                                    <li>Herbívoro</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>Águas rasteiras á 200 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">É uma espécie de tartaruga marinha encontrada em oceanos tropicais e subtropicais ao redor do mundo. São conhecidas por sua coloração verde-oliva, devido às algas que fazem parte de sua dieta. Elas têm um papel fundamental na manutenção dos ecossistemas marinhos, pois ajudam a controlar o crescimento excessivo de algas. O peso médio de um adulto pode variar de 68 a 190 quilos.</p>
                     </div>
     
                 </div><!--FIM DO ID TEXT-->
             </div>
     
     
-            <div class="conteudo">
+            <div class="conteudo" data-aos="fade-left" (aparece da esquerda)
+            data-aos-easing="linear"
+            data-aos-duration="2500">
                 <!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
@@ -220,14 +225,14 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho </li>
-                                    <li>10cm</li>
+                                    <li>1.6 a 2 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimento</li>
-                                    <li>zooplâncton</li>
+                                    <li>Carnívora</li>
                                 </ul>
                             </li>
     
@@ -240,16 +245,15 @@
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">O peixe-borboleta, conhecido como Chaetodon semilarvatus, encanta com suas cores
-                            vibrantes e movimentos graciosos. Nadando entre corais, ele é uma joia dos oceanos tropicais.
+                        <p class="info">É uma espécie de tubarão comuns em recifes de coral e áreas costeiras tropicais dos oceanos Índico e Pacífico. Eles são reconhecidos pelas pontas das suas barbatanas dorsais, que são negras. Se alimentam principalmente de peixes ósseos, raias, lulas e crustáceos. São caçadores ágeis e costumam se deslocar em grupos enquanto buscam por presas, tornando-se importantes predadores nos ecossistemas de recifes de coral.
                         </p>
                     </div><!--FIM DO ID TEXT-->
                 </div>
     
                 <div class="direita">
                     <div id="element3">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/araia.png">
+                        <h3> Tubarão-de-pontas-negras-do-recife (Carcharhinus melanopterus)</h3>
+                        <img class="img" src="img-indico/tubarão-das-pontas-pretas.png">
                     </div>
                 </div>
     
@@ -272,14 +276,16 @@
             <div class="wave_esquerda2"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-right"  (aparece da direita)
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"> <!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
     
                     <div id="element4">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/peixe lão.png">
+                        <h3>Lula gigante (Architeuthis dux)</h3>
+                        <img class="img" src="img-indico/lula-gigante.png">
                     </div>
                 </div>
     
@@ -290,27 +296,27 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho: </li>
-                                    <li>47cm</li>
+                                    <li>10 a 13 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Alimento:</li>
-                                    <li>camarões e pequenos peixes</li>
+                                    <li>Carnívoro</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
                                     <li>Profundidade:</li>
-                                    <li>300m</li>
+                                    <li>300 a 1.000 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">O peixe-leão-comum, com suas vibrantes cores e movimentos graciosos, é uma presença encantadora nos recifes marinhos, mas sua proliferação descontrolada representa uma ameaça à biodiversidade marinha.</p>
+                        <p class="info">É uma das maiores espécies de lulas, vivendo nas profundezas dos oceanos ao redor do mundo a mais de 300 metros de profundidade, podendo alcançar até 1.000 metros. São conhecidas por seu tamanho impressionante, com tentáculos que podem exceder 10 metros. Sua dieta inclui peixes, lulas menores e outros animais marinhos, e são especialistas na caça em ambientes de grande pressão e escuridão nas profundezas oceânicas. Raramente são avistadas vivas na natureza.</p>
                     </div><!--FIM DO ID TEXT-->
     
                 </div>
@@ -328,7 +334,9 @@
                 </div>
             </div>
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-left" (aparece da esquerda)
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
@@ -338,30 +346,27 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho </li>
-                                    <li>47cm</li>
+                                    <li>30cm</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimentação:</li>
+                                    <li>invertebrados e  pequenos organismos marinhos</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>600 a 1.200 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">"Peixe-bolha" ou "blobfish," é uma espécie de peixe que habita as profundezas do oceano. Eles são encontrados em profundidades que variam de 600 a 1.200 metros abaixo da superfície. O peixe-bolha é conhecido por seu aspecto gelatinoso e corpo flácido, adaptado às altas pressões e baixas temperaturas das águas profundas.</p>
                     </div><!--FIM DO ID TEXT-->
     
     
@@ -385,8 +390,8 @@
     
                 <div class="direita">
                     <div id="element5">
-                        <h3>TITULO</h3>
-                        <img class="imglarger" src="img atlantico/lala-removebg-preview.png">
+                        <h3>Peixe-Bolha (Psychrolutes marcidus) </h3>
+                        <img class="imglarger" src="img-indico/peixe-bolha-1-removebg-preview.png">
                     </div>
                 </div>
             </div>
@@ -394,13 +399,15 @@
             <div class="wave_direita4"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-right"  (aparece da direita)
+            data-aos-easing="linear"
+            data-aos-duration="2500"><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                     <div id="element6">
-                        <h3>TITULO</h3>
-                        <img class="img" src="img atlantico/tubaba.png">
+                        <h3>Tubarão-Baleia (Rhincodon typus)</h3>
+                        <img class="img" src="img-indico/Tubarao-baleia.png">
                     </div>
                 </div>
     
@@ -411,30 +418,27 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>12 a 18 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimentação:</li>
+                                    <li>Herbívora</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade:</li>
+                                    <li>Águas costeiras até 700 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">O tubarão-baleia é o maior peixe do mundo, encontrado em oceanos tropicais e subtropicais. Eles habitam águas costeiras e profundas, atingindo em média 12 metros de comprimento, podendo chegar a mais de 18 metros. Alimentam-se de plâncton, pequenos peixes e organismos filtrando água com suas brânquias. Apesar de seu tamanho impressionante, são pacíficos com os humanos e são uma atração popular para o ecoturismo e observação da vida marinha globalmente.</p>
                     </div>
     
                 </div><!--FIM DO ID TEXT-->
@@ -453,7 +457,10 @@
             </div>
     
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-left" (aparece da esquerda)
+            data-aos-easing="linear"
+            data-aos-duration="2500"
+       ><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
@@ -469,24 +476,21 @@
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimentação</li>
+                                    <li>Carnívoros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade</li>
+                                    <li>200 a 2.000 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">O Peixe-dragão-negro é uma espécie de águas profundas, com aparência peculiar, encontrada globalmente. Vive em profundidades de 200 a 2.000 metros, é carnívoro e utiliza bioluminescência para atrair presas e parceiros.</p>
                     </div>
     
     
@@ -494,9 +498,9 @@
     
                 <div class="direita">
                     <div id="element7">
-                        <h3>TITULO</h3>
+                        <h3>Peixe-dragão-negro (Idiacanthus atlanticus)</h3>
                         <img class="img"
-                            src="img atlantico/peixe.png">
+                            src="img-indico/peixe-dragao.png">
                     </div>
                 </div>
                 <div id="bubbles">
@@ -518,14 +522,17 @@
             <div class="wave_esquerda3"></div>
             <!--ANIMAÇÃO DO FUNDO ESSA MERDA É UMA GAMBIARRA DO CARALHO ENT SE DER MERDA ME CHAMA 😊-->
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-right"  (aparece da direita)
+            data-aos-easing="linear"
+            data-aos-duration="2500"
+       ><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
                     <div id="element8">
-                        <h3>TITULO</h3>
+                        <h3>Manta-rajada (Manta alfredi)</h3>
                         <img class="imglarger"
-                            src="img atlantico/peixebranco.png">
+                            src="img-indico/manta-alfredo.png">
                     </div>
                 </div>
                 <div class="wave_direita3"></div>
@@ -538,37 +545,37 @@
                         <ul class="detalhes_info">
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>Tamanho</li>
+                                    <li>5 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimentação</li>
+                                    <li>Herbívora</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Profundidade</li>
+                                    <li>200 metros</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">A Manta alfredi é uma espécie de raia manta encontrada em oceanos tropicais e subtropicais. Elas frequentemente vivem em águas costeiras e podem ser encontradas em profundidades de até 200 metros. Essas mantas podem atingir tamanhos impressionantes, com envergadura de asas que pode chegar a mais de 5 metros. A Manta alfredi é uma espécie filtradora que se alimenta principalmente de plâncton e pequenos organismos marinhos, que são capturados enquanto nadam com suas bocas abertas.</p>
                     </div>
     
                 </div><!--FIM DO ID TEXT-->
             </div>
     
-            <div class="conteudo"><!--animação vindo dos lados no conteudo todo-->
+            <div class="conteudo" data-aos="fade-left" (aparece da esquerda)
+            data-aos-easing="linear"
+            data-aos-duration="2500"
+       ><!--animação vindo dos lados no conteudo todo-->
     
                 <!--DIV ESQUERDA DENTRO DO CONTEUDO-->
                 <div class="esquerda"><!--COMEÇO DO QUE APARECERA NA ESQUERDA-->
@@ -578,38 +585,35 @@
                             <li>
                                 <ul class="detalhes">
                                     <li>Tamanho </li>
-                                    <li>1.6m</li>
+                                    <li>30 metros</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>Alimentação</li>
+                                    <li>Pequenos animais</li>
                                 </ul>
                             </li>
     
                             <li>
                                 <ul class="detalhes">
-                                    <li>Tamanho</li>
-                                    <li>1.6m</li>
+                                    <li>profundidade</li>
+                                    <li>500 metros (ou até mais fundo)</li>
                                 </ul>
                             </li>
                         </ul>
     
                         <h3>SOBRE O ANIMAL</h3>
-                        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quo similique fugit,
-                            asperiores, atque sed recusandae exercitationem saepe nam, necessitatibus natus nobis ratione
-                            facere
-                            soluta optio pariatur suscipit molestias ipsam?</p>
+                        <p class="info">A Baleia-azul é o maior animal da Terra, alcançando até 30 metros de comprimento, habitando profundidades oceânicas de até 500 metros. Sua dieta consiste principalmente de krill, e elas filtram esses crustáceos com suas grandes placas de barbas durante a alimentação.</p>
                     </div><!--FIM DO ID TEXT-->
                 </div>
     
                 <div class="direita">
                     <div id="element9">
-                        <h3>TITULO</h3>
+                        <h3>Baleia-azul (Balaenoptera musculus)</h3>
                         <img class="imglarger"
-                            src="img atlantico/camarãovacalo.png">
+                            src="img-indico/baleiazuzu.png">
                 </div>
     
                 <div id="bubbles">
@@ -638,7 +642,7 @@
     <script>
         AOS.init();
     </script>
-    <script src="JS/atlantico.js"></script>
+    <script src="JS/indico.js"></script>
 
 </body>
 </html>
