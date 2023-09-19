@@ -281,6 +281,7 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 102px;
 }
 
 #caixa2{
@@ -292,73 +293,113 @@ h2{
   justify-content: center;
   padding-left: 175px;
   width: 100%;
-  height: 680px;
+  height: 747px;
   align-items: center;
   margin-bottom: 200px;
-  margin-top: 51px;
+  margin-top: 130px;
 }
 
 #antartico{
   position: absolute;
-  width: 120px;
-  height: 40px;
-  background-color: #FF0075;
+  width: 163px;
+  height: 52px;
+  background-color: #6ce6d6;
   text-decoration: none;
   align-self: center;
   text-align: center;
-  padding: 10px;
-  top: 527px;
+  padding: 13px;
+  top: 631px;
   left: 677px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#antartico:hover{
+  color: #fff;
+  background-color: deeppink;
+  transition: 2s;
 }
 
 #artico{
   position: absolute;
-  width: 120px;
-  height: 40px;
-  background-color: #C400FF;
+  width: 163px;
+  height: 52px;
+  background-color: #6ce6d6;
   text-decoration: none;
   align-self: center;
   text-align: center;
-  padding: 10px;
+  padding: 13px;
   top: 27px;
   left: 677px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#artico:hover{
+  color: #fff;
+  background-color: green;
+  transition: 2s;
 }
 
 #indico{
   position: absolute;
-  width: 120px;
-  height: 40px;
-  background-color: #0079FF;
+  width: 163px;
+  height: 52px;
+  background-color: #6ce6d6;
   text-decoration: none;
   align-self: center;
   text-align: center;
-  padding: 10px;
-  top: 375px;
-  left: 919px;
+  padding: 13px;
+  top: 423px;
+  left: 1054px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#indico:hover{
+  color: #fff;
+  background-color: purple;
+  transition: 2s;
 }
 
 #pacifico{
   position: absolute;
-  width: 120px;
-  height: 40px;
-  background-color: #49FF00;
+  width: 163px;
+  height: 52px;
+  background-color: #6ce6d6;
   text-decoration: none;
   align-self: center;
   text-align: center;
-  padding: 10px;
+  padding: 13px;
   top: 375px;
   left: 118px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#pacifico:hover{
+  color: #fff;
+  background-color: orangered;
+  transition: 2s;
 }
 
 #atlantico{
   position: absolute;
-  width: 120px;
-  height: 40px;
-  background-color: #FF9300;
+  width: 163px;
+  height: 52px;
+  background-color: #6ce6d6;
   text-decoration: none;
   align-self: center;
   text-align: center;
-  padding: 10px;
+  padding: 13px;
   top: 327px;
   left: 562px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#atlantico:hover{
+  color: #fff;
+  background-color: red;
+  transition: 2s;
 }
