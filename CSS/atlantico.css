@@ -262,6 +262,22 @@ main{
 
 }
 
+button {
+  z-index: 999;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 25%;
+  margin-bottom: 80px;
+  background-color: #1c3a67;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .style {
   font-size: 22px;
 }
