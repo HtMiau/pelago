@@ -289,6 +289,23 @@ main{
 
 }
 
+/*botão*/
+button{
+  z-index: 99;
+  font-size: 30px;
+  top:0;
+  margin-left:40%;
+  margin-bottom: 80px;
+ background-color: #1c3a67;
+ border-radius: 10px;
+ padding: 30px;
+}
+
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+
 /*FIM DO CSS DOS TEXTOS*/
 
 .img {
@@ -338,6 +355,7 @@ main{
   border-radius: 35%;
   background-color: #2e5084;
   animation: wave 15s infinite linear;
+  z-index: -1;
 }
 
 
@@ -352,6 +370,7 @@ main{
   border-radius: 35%;
   background-color: #2e5084;
   animation: wave 15s infinite linear;
+  z-index: -1;
 }
 
 .wave_direita3 {
@@ -365,6 +384,7 @@ main{
   border-radius: 35%;
   background-color:#2e5084;
   animation: wave 15s infinite linear;
+  z-index: -1;
 }
 
 .wave_direita4 {
@@ -378,6 +398,7 @@ main{
   border-radius: 35%;
   background-color: #2e5084;
   animation: wave 15s infinite linear;
+  z-index: -1;
 }
 
 .wave_esquerda3 {
@@ -392,6 +413,7 @@ main{
   background-color:#2e5084;
   ;
   animation: wave 15s infinite linear;
+  z-index: -1;
 }
 
 
@@ -406,6 +428,7 @@ main{
   border-radius: 35%;
   background-color: #2e5084;
   animation: wave 15s infinite linear;
+  z-index: -1;
 }
 
 @keyframes wave {
