@@ -8,6 +8,12 @@
   src: url(../fontes/boldern-font/Boldern-L3lVE.ttf) format('truetype');
   font-weight: normal;
   font-style: italic;
+
+}
+
+@font-face {
+  font-family:'oceania' ;
+  src: url(../fontes/oceania-font/Oceania-13LL.ttf);
 }
 
 body{
@@ -132,7 +138,7 @@ body{
     margin-top: 100px;
     color: white;
     font-size: 100px;
-    font-family: 'Praktika';
+    font-family: 'oceania';
 }
 #text{
   position: relative;
@@ -141,7 +147,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Pelago';
+  font-family: oceania;
   z-index: -1;
   font-size: 100px;
   color: #fff;
