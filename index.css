@@ -400,10 +400,18 @@ h2{
   align-self: center;
   text-align: center;
   padding: 13px;
+  font-size: 20px;
   top: 327px;
   left: 562px;
   border-radius: 15px;
 }
+#atlantico:hover{
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  transition: 2s;
+}
+
+
 
 
 /*Responsividade celular*/
