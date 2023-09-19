@@ -128,7 +128,12 @@ body{
     font-family: 'Praktika';
 }
 
+
 #audio_acess{
+ 
+  margin-bottom: 420px;
+  margin-top: -150px;
+  margin-left: 39%;
 }
 
 .titulo_algas{
@@ -209,9 +214,51 @@ body{
 }
 
 .audio_text{
+    position: absolute;
     color: white;
-    margin-right: 800px;
-    margin-top: 20px;
+    margin-top: 200px;
+    top: 580px;
+    left: 40%;
+    
+}
+
+.tartaruga_text_acess{
+  color: #fff;
+  margin-left: 700px;
+  margin-top: -200px;
+}
+
+.bt1{
+  margin-left:950px;
+  width: 150px;
+  margin-top: -100px;
+}
+
+.baleia_text_acess{
+  color: #fff;
+  margin-left: 700px;
+  margin-top: -200px;
+  
+}
+
+
+.botao2{
+  margin-left:950px;
+  width: 150px;
+  margin-top: -100px
+  
+}
+
+.tubarao_text_acess{
+  color: #fff;
+  margin-left: 700px;
+  margin-top: -200px;
+}
+
+.botao3{
+  margin-left:950px;
+  width: 150px;
+  margin-top: -100px;
 }
 
 
@@ -593,7 +640,7 @@ body{
 
     .audio_text{
       position: absolute;
-      left: 100px;
+      left: 400px;
     }
 
     #audio_acess{
@@ -684,6 +731,10 @@ body{
       width: 630px; 
       font-size: 22px;
       text-align: center;
+    }
+
+    .tubarao_gif{
+      margin-bottom: 150px;
     }
 
     .botao3{
