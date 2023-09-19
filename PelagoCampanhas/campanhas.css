@@ -1,9 +1,3 @@
-@font-face{
-  font-family: 'Praktika';
-  src: url(../fontes/praktika/Praktika-Light.otf);
-  
-}
-
 @font-face {
   font-family: 'Modernsans' ;
   src: url(../fontes/modern_sans/ModernSans-Light.otf);
@@ -119,6 +113,12 @@ body{
     left: 600px;
 }
 
+@font-face{
+  font-family: 'Praktika';
+  src: url(../fontes/praktika/Praktika-Light.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .titulo_principal{
     text-align: center;
