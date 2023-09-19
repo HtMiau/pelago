@@ -402,7 +402,7 @@ h2{
   padding: 13px;
   top: 327px;
   left: 562px;
-<<<<<<< HEAD
+  border-radius: 15px;
 }
 
 
@@ -464,14 +464,4 @@ h2{
     top:170px
   }
   
-=======
-  font-size: 20px;
-  border-radius: 15px;
-}
-
-#atlantico:hover{
-  color: #fff;
-  background-color: red;
-  transition: 2s;
->>>>>>> d4d118a6c4ba4b9be951bb5bd5d906505258787c
 }
