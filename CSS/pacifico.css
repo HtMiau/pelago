@@ -18,7 +18,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'vitorian';
-  overflow-x: hidden;
+
 }
 
 
@@ -708,8 +708,8 @@ button a{
 }
 
   header {
-    height: 300px;
     width: 100%;
+
   }
 
   #fundo{
@@ -756,6 +756,7 @@ button a{
   }
 
   header {
+    width: 100%;
     height: 450px;
     font-size: 50px;
   }
