@@ -147,11 +147,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Praktika;
+  font-family: Pelago;
   z-index: -1;
-  font-size: 100px;
+  font-size: 160px;
   color: #fff;
-  top: -150px;
+  top: -190px;
 }
 
 #text h1{
@@ -286,19 +286,19 @@ body{
 .tartaruga_text_acess{
   color: #fff;
   margin-left: 700px;
-  margin-top: -200px;
+  margin-top: -274px;
 }
 
 .bt1{
   margin-left:950px;
   width: 150px;
-  margin-top: -100px;
+  margin-top: 40px;
 }
 
 .baleia_text_acess{
   color: #fff;
   margin-left: 700px;
-  margin-top: -200px;
+  margin-top: -300px;
   
 }
 
@@ -306,20 +306,20 @@ body{
 .botao2{
   margin-left:950px;
   width: 150px;
-  margin-top: -100px
+  margin-top: 40px
   
 }
 
 .tubarao_text_acess{
   color: #fff;
   margin-left: 700px;
-  margin-top: -200px;
+  margin-top: -300px;
 }
 
 .botao3{
   margin-left:950px;
   width: 150px;
-  margin-top: -100px;
+  margin-top: 40px;
 }
 
 
@@ -768,7 +768,7 @@ body{
     .botao2{
       margin-left: 140px;
       margin-top: 20px;
-      width: 120px;
+      width: 20px;
     }
 
     .tartaruga_text_acess{
@@ -783,7 +783,7 @@ body{
     .bt1{
      margin-top: 20px;
      width: 150px;
-     margin-left: 150px;
+     margin-left: 160px;
     }
     
     .tubarao_text_acess{
@@ -800,8 +800,13 @@ body{
 
     .botao3{
       margin-left: 150px;
-      margin-top: 20px;
-      width: 150px;
+      margin-top: 50px;
+      width: 120px;
+    }
+
+    #botaoultimo{
+      margin-top: 300px;
+      
     }
 
     .slide_buttons{
