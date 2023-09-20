@@ -135,22 +135,23 @@ body{
 
 .titulo_principal{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     color: white;
     font-size: 100px;
-    font-family: 'oceania';
+    font-family: '';
 }
 #text{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: oceania;
+  font-family: Praktika;
   z-index: -1;
   font-size: 100px;
   color: #fff;
+  top: -150px;
 }
 
 #text h1{
@@ -277,7 +278,7 @@ body{
     position: absolute;
     color: white;
     margin-top: 720px;
-    top: 580px;
+    top: 0px;
     left: 40%;
     
 }
@@ -327,7 +328,7 @@ body{
   .slider {
     margin: 0 auto;
     max-width: 940px;
-    margin-top: 80px;
+    margin-top: 220px;
     opacity: 0.89;
   }
   
