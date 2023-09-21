@@ -691,6 +691,10 @@ button a{
 /*RESPONSIVIDADE CELULARES*/
 
 @media screen and (max-width: 500px){
+
+  body{
+    width: 100%;
+  }
   
   nav .menu {
     text-align: center;
